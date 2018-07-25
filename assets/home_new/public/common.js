@@ -1,11 +1,11 @@
 function debounce(fn, delay) {
   // 维护一个 timer
-  let timer = null;
+  var timer = null;
 
   return function() {
     // 通过 ‘this’ 和 ‘arguments’ 获取函数的作用域和变量
-    let context = this;
-    let args = arguments;
+    var context = this;
+    var args = arguments;
 
     clearTimeout(timer);
     timer = setTimeout(function() {
@@ -17,7 +17,7 @@ function debounce(fn, delay) {
 
 function eclipse(selector,number){
   $(selector).each(function(index,info){
-    let html = info.innerHTML;
+    var html = info.innerHTML;
 
     if(html.length>number){
       info.innerHTML = html.slice(0,number)+'...';

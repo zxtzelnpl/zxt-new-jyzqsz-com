@@ -44,11 +44,7 @@
     font-size:36px;
     color:#333;
   }
-  &-swiper-container{
-    margin:0 auto;
-    width:1280px;
-  }
-  &-swiper-pagination{
+  &-nav{
     display:flex;
     align-items: flex-end;
     justify-content: center;
@@ -59,7 +55,7 @@
     border-bottom:1px solid #e5e5e5;
     font-size:24px;
     color:#999999;
-    &-label{
+    &-li{
       margin-bottom:-1px;
       height:45px;
       width:120px;
@@ -75,11 +71,39 @@
         margin-right:290px;
       }
     }
+    &-contents{
+      margin:0 auto;
+      width:1200px;
+      .content{
+        position:relative;
+        width:1200px;
+        display:none;
+        &.active{
+          display:block;
+        }
+      }
+    }
+  }
+  &-swiper-container{
+    margin-left:-15px;
+    width:1230px;
+    padding-bottom:40px;
+    box-sizing: border-box;
+    .swiper-slide{
+      display:flex;
+      justify-content: center;
+      &:first-child{
+        margin-left:0;
+      }
+      &:last-child{
+        margin-right:0;
+      }
+    }
   }
   &-swiper-button-prev{
     position:absolute;
-    top:56%;
-    left:0;
+    top:45%;
+    left:-48px;
     width:24px;
     height:24px;
     background:url("/assets/home_new/images/icon_cp_left.png") no-repeat center center;
@@ -88,90 +112,79 @@
   }
   &-swiper-button-next{
     position:absolute;
-    top:56%;
-    right:0;
+    top:45%;
+    right:-48px;
     width:24px;
     height:24px;
     background:url("/assets/home_new/images/icon_cp_right.png") no-repeat center center;
     cursor:pointer;
     z-index: 2;
   }
-  &-sub{
-    height:60px;
-    font-size:16px;
-    text-align: center;
-    color:#999;
-  }
-}
-.review-boxes{
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:0 40px 60px;
-  width:1200px;
-  .box{
-    width:380px;
-    height:580px;
+
+  &-box {
+    margin:0 15px;
+    width: 380px;
+    height: 580px;
     box-shadow: 2px 2px 20px #e5e5e5;
-    background:url("/assets/home_new/images/icon_cp_btbg.png") no-repeat center top;
-    .title{
-      height:72px;
+    background: url("/assets/home_new/images/icon_cp_btbg.png") no-repeat center top;
+    .title {
+      height: 72px;
       line-height: 72px;
-      color:#fff;
-      font-size:30px;
+      color: #fff;
+      font-size: 30px;
       text-align: center;
     }
-    .chart{
-      margin:20px auto 0;
-      width:190px;
-      height:190px;
+    .chart {
+      margin: 20px auto 0;
+      width: 190px;
+      height: 190px;
       line-height: 190px;
-      font-size:30px;
-      color:@primaryColor;
+      font-size: 30px;
+      color: @primaryColor;
       text-align: center;
-      background:url("/assets/home_new/images/icon_cp_zgzf.png") center center no-repeat;
-      background-size:cover;
+      background: url("/assets/home_new/images/icon_cp_zgzf.png") center center no-repeat;
+      background-size: cover;
     }
-    .sub{
-      margin-top:8px;
-      font-size:14px;
+    .sub {
+      margin-top: 8px;
+      font-size: 14px;
       text-align: center;
-      color:@primaryColor;
+      color: @primaryColor;
     }
-    .detail{
+    .detail {
       padding-top: 30px;
-      height:150px;
-      .date{
-        margin:12px 56px 0;
-        padding-left:36px;
+      height: 150px;
+      .date {
+        margin: 12px 56px 0;
+        padding-left: 36px;
         box-sizing: border-box;
-        font-size:16px;
-        color:#333333;
-        background:url("/assets/home_new/images/icon_cp_time.png") left center no-repeat;
+        font-size: 16px;
+        color: #333333;
+        background: url("/assets/home_new/images/icon_cp_time.png") left center no-repeat;
       }
-      .stock{
-        margin:12px 56px 0;
-        padding-left:36px;
+      .stock {
+        margin: 12px 56px 0;
+        padding-left: 36px;
         box-sizing: border-box;
-        font-size:16px;
-        color:#333333;
-        background:url("/assets/home_new/images/icon_cp_bd.png") left center no-repeat;
+        font-size: 16px;
+        color: #333333;
+        background: url("/assets/home_new/images/icon_cp_bd.png") left center no-repeat;
       }
-      .state{
-        margin:12px 56px 0;
-        padding-left:36px;
+      .state {
+        margin: 12px 56px 0;
+        padding-left: 36px;
         box-sizing: border-box;
-        font-size:16px;
-        color:#333333;
-        background:url("/assets/home_new/images/icon_cp_zt.png") left center no-repeat;
+        font-size: 16px;
+        color: #333333;
+        background: url("/assets/home_new/images/icon_cp_zt.png") left center no-repeat;
       }
-      .compare{
-        margin:12px 56px 0;
-        padding-left:36px;
+      .compare {
+        margin: 12px 56px 0;
+        padding-left: 36px;
         box-sizing: border-box;
-        font-size:16px;
-        color:#333333;
-        background:url("/assets/home_new/images/icon_cp_zt.png") left center no-repeat;
+        font-size: 16px;
+        color: #333333;
+        background: url("/assets/home_new/images/icon_cp_zt.png") left center no-repeat;
       }
     }
     .link{
@@ -186,6 +199,12 @@
       color:#fff;
       background: @primaryColor;
     }
+  }
+  &-sub{
+    height:60px;
+    font-size:16px;
+    text-align: center;
+    color:#999;
   }
 }
 
