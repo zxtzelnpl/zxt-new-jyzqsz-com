@@ -1,0 +1,20 @@
+{
+  "name": "zxt-new-jyzqsz-com",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "zxt_z <zxt_zel_npl@163.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zxtzelnpl/zxt-new-jyzqsz-com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swiper": "^4.3.3"
+  }
+}

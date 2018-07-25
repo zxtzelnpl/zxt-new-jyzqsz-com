@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主题博弈</title>
+    @@include('head.html')
+    <link rel="stylesheet" href="/assets/home_new/public/jquery.pagination.css">
+    <link rel="stylesheet" href="/assets/home_new/css/game.css">
+</head>
+<body>
+@@include('header.html')
+
+
+<!--面包屑导航-->
+<div class="crumbs">
+    <a href="#">首页</a>
+    <a href="#" class="crumbs-add">主题博弈</a>
+</div>
+
+
+<div class="container game">
+    <h2 class="game-head">主题博弈</h2>
+    <div class="game-content">
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+        <a class="game-link" href="#">
+            <img class="game-img" src="http://zhangwenjun.jyzqsz.com/upload/pdf/1527740429_MSCI.jpg" alt="">
+        </a>
+    </div>
+    <div class="pagination">
+        <div id="pagination" class="pagination-inner">
+
+        </div>
+    </div>
+</div>
+
+
+@@include('footer.html')
+</body>
+@@include('foot.html')
+<script src="/assets/home_new/public/jquery.pagination.min.js"></script>
+<script>
+  $(function(){
+    $("#pagination").pagination({
+      currentPage: 1,
+      totalPage: 12,
+      callback: function(current) {
+        alert(current)
+      }
+    });
+  })
+</script>
+</html>
