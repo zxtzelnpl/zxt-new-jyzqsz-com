@@ -536,7 +536,7 @@
     });
 
     $(".teacher .box").on('click',function(){
-      let $this = $(this)
+      var $this = $(this)
       if($this.hasClass('before')){
         $(".teacher .box.after").removeClass('after').addClass('before')
         $this.removeClass('before').addClass('after');
@@ -553,5 +553,6 @@
     /*查过两行加上省略号*/
     eclipse('.finance-box-title',30);
     eclipse('.reference-box-title',30);
+    eclipse('.product-box-info-detail',50);
   })
 </script>

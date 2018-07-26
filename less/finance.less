@@ -1,3 +1,120 @@
-.finance{
-  margin-bottom: 100px;
+@import "../common/const";
+
+.page-finance{
+  margin:0 auto 100px;
+  padding-bottom: 100px;
+  width:1200px;
+  &-nav{
+    padding:0 40px;
+    height:220px;
+    box-sizing: border-box;
+    border:1px solid #e5e5e5;
+    color:#333;
+    background:#fff;
+    &-head{
+      height:72px;
+      line-height:71px;
+      border-bottom:1px solid #e5e5e5;
+      font-size:20px;
+    }
+    &-body{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      box-sizing: border-box;
+      height:146px;
+      padding:24px 0;
+      .select{
+        display:flex;
+        font-size:16px;
+        &-label,&-link{
+          height:32px;
+          line-height: 32px;
+        }
+        &-label{
+
+        }
+        &-link{
+          margin-right:30px;
+          padding:0 15px;
+          border-radius:5px;
+          &.active,&:hover{
+            color:#fff;
+            background:@primaryColor;
+          }
+        }
+      }
+    }
+  }
+  &-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding:20px 0;
+
+    color:#333;
+    &-li{
+      display:block;
+      margin: 20px 26px 20px 0;
+      width:280px;
+      background:#fff;
+
+      &:nth-child(4n){
+        margin-right:0;
+      }
+      .img{
+        position:relative;
+        width:280px;
+        height:200px;
+        >img{
+          display:block;
+          width:100%;
+          height:100%;
+        }
+        &-cover{
+          position:absolute;
+          left:0;
+          top:0;
+          display:none;
+          width:100%;
+          height:100%;
+          background:rgba(2,2,2,.2) url("/assets/home_new/images/icon_sp_play.png") center center no-repeat;
+        }
+        &:hover .img-cover{
+          display:block;
+        }
+      }
+      .info{
+        box-sizing: border-box;
+        height:100px;
+        padding-top:18px;
+        font-size:16px;
+      }
+      .title{
+        padding-left:20px;
+        .no-warp();
+        .text-hover();
+      }
+      .sub{
+        display:flex;
+        justify-content: space-between;
+
+        margin-top:18px;
+        padding:0 20px 0 16px;
+        color:#a1a1a1;
+        &-date{
+          padding-left:36px;
+          background:url("/assets/home_new/images/icon_cp_time.png") left center no-repeat;
+        }
+        &-time{
+          padding-left:36px;
+          background:url("/assets/home_new/images/icon_sp_sc.png") left center no-repeat;
+
+          visibility: hidden;
+        }
+      }
+    }
+  }
 }

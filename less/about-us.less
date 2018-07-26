@@ -41,12 +41,13 @@ html,body{
 .swiper-pagination-bullet{
   background:#ccc;
   opacity:1;
+  outline: none;
   &.swiper-pagination-bullet-active{
     background:#007aff;
   }
 }
 .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
-  margin:8px 0;
+  margin:12px 0;
 }
 
 .swiper-slide{
@@ -293,6 +294,15 @@ html,body{
           line-height: 2;
           .text-hover();
         }
+        .img-cover{
+          display:none;
+          width:100%;
+          height:100%;
+          background:rgba(2,2,2,.2) url("/assets/home_new/images/aboutus/big-btn.png") no-repeat right bottom;
+        }
+        .img:hover .img-cover{
+          display:block;
+        }
         &.usfour4{
           .img{
             width:1100px;
@@ -305,21 +315,24 @@ html,body{
           .img{
             width:350px;
             height:350px;
-            background:url("/assets/home_new/images/aboutus/usfour-big1.jpg") -230px -70px no-repeat;
+            background:url("/assets/home_new/images/aboutus/usfour-big1.jpg") center center no-repeat;
+            background-size:cover;
           }
         }
         &.usfour2{
           .img{
             width:350px;
             height:350px;
-            background:url("/assets/home_new/images/aboutus/usfour-big2.jpg") -60px -70px no-repeat;
+            background:url("/assets/home_new/images/aboutus/usfour-big2.jpg") center center no-repeat;
+            background-size:cover;
           }
         }
         &.usfour3{
           .img{
             width:350px;
             height:350px;
-            background:url("/assets/home_new/images/aboutus/usfour-big3.jpg") -435px -220px no-repeat;
+            background:url("/assets/home_new/images/aboutus/usfour-big3.jpg")  center center no-repeat;
+            background-size:cover;
           }
         }
       }
@@ -388,6 +401,7 @@ html,body{
         color:#fff;
         line-height: 2;
         &.company-name{
+          margin-top:10px;
           text-align: center;
           font-size:22px;
           letter-spacing: 2px;
@@ -399,7 +413,7 @@ html,body{
         }
       }
       &-line{
-        margin:30px 0;
+        margin:20px 0;
         width:36px;
         height:1px;
         background: #686978;
