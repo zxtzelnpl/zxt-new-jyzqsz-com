@@ -8,6 +8,18 @@ html,body{
 .about-us{
   width:100%;
   height:100%;
+  min-height:900px;
+}
+
+.swiper-container .next{
+  position:absolute;
+  left:50%;
+  bottom:0;
+
+  margin-left:-12px;
+  width:24px;
+  height:24px;
+  z-index: 11;
 }
 
 .swiper-container,.swiper-wrapper,.swiper-slide{
@@ -16,8 +28,10 @@ html,body{
   height:100%;
 }
 
-.swiper-pagination{
+.swiper-pagination.swiper-pagination-bullets{
   left:10px;
+  right:auto;
+
 }
 
 .sider-toolbar{
@@ -75,107 +89,321 @@ html,body{
     .header{
       width:100%;
     }
+    .content{
+      &-body{
+        flex-grow: 1;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
   &.two{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
     font-size:20px;
     background:#fff;
-    letter-spacing: 1px;
-    .content-text{
-      margin:0 auto;
-      padding:25px 0 75px 0;
-      width:990px;
-      box-sizing: border-box;
-    }
-    .content-img{
-      position:relative;
-      margin:0 auto;
-      width:990px;
-      height:560px;
-      &-p1{
-        position:absolute;
-        top:0;
-        left:0;
+    .content{
+      &-body{
+        flex-grow: 1;
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
       }
-      &-p2{
-        position:absolute;
-        top:0;
-        right:0;
+      &-text{
+        width:990px;
+        box-sizing: border-box;
+        letter-spacing: 1px;
       }
-      &-p3{
-        position:absolute;
-        bottom:0;
-        left:430px;
-      }
-      &-p4{
-        position:absolute;
-        bottom:0;
-        right:0;
+      &-img{
+        position:relative;
+        margin:0 auto;
+        width:990px;
+        height:560px;
+        &-p1{
+          position:absolute;
+          top:0;
+          left:0;
+        }
+        &-p2{
+          position:absolute;
+          top:0;
+          right:0;
+        }
+        &-p3{
+          position:absolute;
+          bottom:0;
+          left:430px;
+        }
+        &-p4{
+          position:absolute;
+          bottom:0;
+          right:0;
+        }
       }
     }
   }
   &.three{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     background:url("/assets/home_new/images/aboutus/common_au_fz_bg.png") no-repeat center bottom;
-    .content-text{
-      display:flex;
-      align-items: center;
-      margin:150px auto 0;
-      width:1200px;
-      height:560px;
-      .time{
+
+
+    .content{
+      &-body{
+        flex-grow: 1;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-text{
+        display:flex;
+        align-items: center;
+        width:1200px;
+        height:560px;
+        .time{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          width:88px;
+          height:88px;
+          border-radius:50%;
+          color:#fff;
+          font-size:18px;
+          background:#424456;
+
+          line-height: 1;
+        }
+        .text{
+          position:absolute;
+          left:43px;
+          width:120px;
+          height:236px;
+          padding-left:20px;
+          border-left:2px solid #424456;
+          box-sizing: border-box;
+        }
+        .line{
+          width:110px;
+          height:2px;
+          background:#424456;
+        }
+        [class^="content-text"]{
+          position:relative;
+
+          display:flex;
+          align-items: center;
+          width:198px;
+          height:88px;
+        }
+        &-t1998,&-t2010,&-t2015{
+          .text{
+            top:88px;
+            display:flex;
+            align-items: flex-end;
+          }
+        }
+        &-t2008,&-t2013,&-t2016{
+          .text{
+            bottom:88px;
+            display:flex;
+            align-items: flex-start;
+          }
+        }
+        &-t2016{
+          .line{
+            width:20px;
+          }
+        }
+      }
+    }
+  }
+  &.four{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    .content{
+      &-body{
+        flex-grow: 1;
+
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content:center;
+
+        width:1120px;
+      }
+      &-img{
+        display:block;
+        width:280px;
+        height:280px;
+        &:nth-child(3n+2){
+          margin:0 140px;
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3){
+          margin-bottom:100px;
+        }
+      }
+    }
+  }
+  &.five{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background:url("/assets/home_new/images/aboutus/common_au_zz_bg.png") no-repeat center bottom;
+    .content{
+      &-title{
+        color:#fff;
+        &:before,&:after{
+          background:#fff;
+        }
+      }
+      &-body{
+        flex-grow: 1;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        width:1100px;
+      }
+      &-row{
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+      }
+      &-box{
+        display:block;
+        .a{
+          display:block;
+          color:#fff;
+          text-align: center;
+          line-height: 2;
+          .text-hover();
+        }
+        &.usfour4{
+          .img{
+            width:1100px;
+            height:300px;
+            background:url("/assets/home_new/images/aboutus/usfour-big4.jpg") no-repeat;
+            background-size:cover;
+          }
+        }
+        &.usfour1{
+          .img{
+            width:350px;
+            height:350px;
+            background:url("/assets/home_new/images/aboutus/usfour-big1.jpg") -230px -70px no-repeat;
+          }
+        }
+        &.usfour2{
+          .img{
+            width:350px;
+            height:350px;
+            background:url("/assets/home_new/images/aboutus/usfour-big2.jpg") -60px -70px no-repeat;
+          }
+        }
+        &.usfour3{
+          .img{
+            width:350px;
+            height:350px;
+            background:url("/assets/home_new/images/aboutus/usfour-big3.jpg") -435px -220px no-repeat;
+          }
+        }
+      }
+      &-img{
+        display:block;
+        width:100%;
+
+      }
+    }
+  }
+  &.six{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background:#424456;
+    .content{
+      &-title{
+        color:#fff;
+        &:before,&:after{
+          background:#fff;
+        }
+      }
+      &-body{
+        flex-grow: 1;
+
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        width:88px;
-        height:88px;
-        border-radius:50%;
-        color:#fff;
-        font-size:18px;
-        background:#424456;
-
-        line-height: 1;
+        width:400px;
       }
-      .text{
-        position:absolute;
-        left:43px;
-        width:120px;
-        height:236px;
-        padding-left:20px;
-        border-left:2px solid #424456;
+      &-box{
+        width:400px;
+        height:480px;
+        padding-top:40px;
+        border:16px solid #686978;
         box-sizing: border-box;
-      }
-      .line{
-        width:110px;
-        height:2px;
-        background:#424456;
-      }
-      [class^="content-text"]{
-        position:relative;
+        &-text{
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
 
-        display:flex;
-        align-items: center;
-        width:198px;
-        height:88px;
-      }
-      &-t1998,&-t2010,&-t2015{
-        .text{
-          top:88px;
-          display:flex;
-          align-items: flex-end;
+          margin:0 auto 40px;
+          width:155px;
+
+          font-size:18px;
+          font-weight:bold;
+          color:#fff;
+          &:before,&:after{
+            content:"";
+            display:block;
+            height:3px;
+            width:14px;
+            background:#fff;
+          }
+        }
+        &-qr{
+          display:block;
+          margin:0 auto;
+          width:280px;
+          height:280px;
         }
       }
-      &-t2008,&-t2013,&-t2016{
-        .text{
-          bottom:88px;
-          display:flex;
-          align-items: flex-start;
+      &-text{
+        color:#fff;
+        line-height: 2;
+        &.company-name{
+          text-align: center;
+          font-size:22px;
+          letter-spacing: 2px;
+          font-weight: bold;
+        }
+        >p{
+          margin-left:5em;
+          text-indent: -5em;
         }
       }
-      &-t2016{
-        .line{
-          width:20px;
-        }
+      &-line{
+        margin:30px 0;
+        width:36px;
+        height:1px;
+        background: #686978;
+        align-self: flex-start;
       }
     }
   }
