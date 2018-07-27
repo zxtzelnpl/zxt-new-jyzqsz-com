@@ -13,6 +13,7 @@
     width:880px;
     padding:0 40px;
     background:#fff;
+    /*第一种标题格式*/
     &-title{
       box-sizing: border-box;
       height:140px;
@@ -23,10 +24,45 @@
         font-size:30px;
         font-weight: bold;
       }
+
       .date{
         margin-top:20px;
         font-size:16px;
         color:#999;
+      }
+
+    }
+
+    /*第二种标题格式*/
+    &-title2{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      box-sizing: border-box;
+      height:160px;
+      padding:40px 0;
+      border-bottom:1px solid #e5e5e5;
+      line-height: 1;
+      .title{
+        font-size:30px;
+        font-weight: bold;
+      }
+      .sub{
+        display:flex;
+        justify-content: space-around;
+        height:16px;
+      }
+      .date,.author,.from{
+        font-size:16px;
+        color:#999;
+      }
+      .line{
+        margin:0 50px;
+        width:1px;
+        height:16px;
+        background:#e5e5e5;
       }
     }
 
