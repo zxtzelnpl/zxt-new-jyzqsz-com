@@ -14,11 +14,39 @@
 
     &-ul {
       display: flex;
+      align-items: center;
     }
     &-li {
+      position:relative;
+
       display: flex;
       align-items: center;
-      margin-right: 40px;
+
+      padding:0 20px;
+
+      &:after{
+        @lineH:18px;
+
+        position:absolute;
+        left:0;
+        top:50%;
+        margin-top:-@lineH/2;
+
+        display:block;
+        content:"";
+
+        width:1px;
+        height:@lineH;
+        background: #e5e5e5;
+      }
+      &:first-child{
+        padding-left:0;
+        border-left:none;
+        &:after{
+          display:none;
+        }
+      }
+
       .name, .rise, .number, .percent {
         display: flex;
         align-items: center;
@@ -63,9 +91,11 @@
       &-a {
         margin-right: 16px;
         color: @primaryColor;
+        .no-warp();
       }
       &-span {
         color: #333333;
+        .no-warp();
       }
     }
   }
