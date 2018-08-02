@@ -5,6 +5,7 @@ html,body{
   height:100%;
 }
 
+
 .about-us{
   width:100%;
   height:100%;
@@ -104,7 +105,6 @@ html,body{
     display:flex;
     flex-direction: column;
     align-items: center;
-
     font-size:20px;
     background:#fff;
     .content{
@@ -116,6 +116,12 @@ html,body{
         align-items: center;
         justify-content: space-around;
       }
+      &-kong{
+        flex-grow: .5;
+        width:100%;
+        height:10px;
+      }
+
       &-text{
         width:990px;
         box-sizing: border-box;
@@ -147,6 +153,7 @@ html,body{
           right:0;
         }
       }
+
     }
   }
   &.three{
@@ -161,9 +168,16 @@ html,body{
         flex-grow: 1;
 
         display:flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
       }
+      &-kong{
+        flex-grow: .5;
+        width:100%;
+        height:10px;
+      }
+
       &-text{
         display:flex;
         align-items: center;
@@ -244,6 +258,13 @@ html,body{
 
         width:1120px;
       }
+      &-kong{
+        flex-grow: .5;
+        width:100%;
+        height:10px;
+      }
+
+
       &-img{
         display:block;
         width:280px;
@@ -279,6 +300,11 @@ html,body{
         justify-content: center;
 
         width:1100px;
+      }
+      &-kong{
+        flex-grow: .5;
+        width:100%;
+        height:10px;
       }
       &-row{
         display:flex;

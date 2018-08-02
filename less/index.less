@@ -162,6 +162,18 @@
   &-container-horizontal > &-pagination-bullets &-pagination-bullet {
     margin: 0 8px;
   }
+  &-button-next, &-container-rtl &-button-prev{
+    width:48px;
+    height:48px;
+    background-image:url("/assets/home_new/images/common_home_right.png");
+    background-size:48px 48px;
+  }
+  &-button-prev, &-container-rtl &-button-next{
+    width:48px;
+    height:48px;
+    background-image:url("/assets/home_new/images/common_home_left.png");
+    background-size:48px 48px;
+  }
 }
 
 /*产品相关*/
@@ -376,7 +388,7 @@
   }
 }
 
-/*君银内参*/
+/*民宗内参*/
 .reference {
   padding-bottom: 80px;
   background:#fff;
@@ -389,10 +401,12 @@
     align-items: center;
     justify-content: flex-start;
     cursor: pointer;
+
+    width:600px;
     &-img {
       display: block;
-      width: 230px;
-      height: 150px;
+      width: 220px;
+      height: 160px;
       .img-hover();
     }
     &-info {
