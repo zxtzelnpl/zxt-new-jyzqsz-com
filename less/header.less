@@ -221,28 +221,39 @@
 
 .sider-toolbar{
   position:fixed;
-  bottom: 300px;
-  right:~"calc(50% - 600px - 48px - 48px)";
+  bottom: 20px;
+  left:1920px;
 
-  display:none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  box-sizing: border-box;
+
   width:48px;
-  height:180px;
+  height:122px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 
-
   background:#fff;
+  overflow: hidden;
   z-index:2;
-  &.show{
-    display:flex;
-  }
   &-box{
-    box-sizing: border-box;
+    display:block;
+    margin:0 auto;
     width:36px;
-    height:36px;
+    height:60px;
     cursor:pointer;
+
+    &:first-child:after{
+      display:none;
+    }
+    &:after{
+      margin:0 auto;
+      display:block;
+      content:"";
+
+      width:28px;
+      height:1px;
+      background:#e5e5e5;
+    }
+
     &-customer{
       background:url("/assets/home_new/images/icon_home_kf_g.png") center center no-repeat;
       background-size: 100%;
@@ -260,14 +271,11 @@
     &-scroll{
       background:url("/assets/home_new/images/icon_home_db.png") center center no-repeat;
       background-size: 100%;
-      &:hover{
-
-      }
     }
   }
-  .line{
-    width:28px;
-    height:1px;
-    background:#e5e5e5;
+
+  &.show{
+    bottom:20px;
+    height:182px;
   }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/assets/home_new/bitbug_favicon.ico" />
     <title><?php echo $category_list[$first_title_num]['seo_t']; ?></title>
     <meta name="keywords" content="<?php echo $category_list[$first_title_num]['seo_k']; ?>">
     <meta name="description" content="<?php echo $category_list[$first_title_num]['seo_d']; ?>">

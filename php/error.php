@@ -9,6 +9,7 @@
 	    <meta name="apple-mobile-web-app-capable" content="yes" />
 	    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <link rel="shortcut icon" href=" /assets/home_new/bitbug_favicon.ico" />
 	    <link rel="stylesheet" type="text/css" href="/assets/home/css/QGindex.css"/>
 	    <script type="text/javascript" src="/assets/home/js/jquery.js"></script>
 	    <script type="text/javascript" src="/assets/home/js/textauto.js"></script>

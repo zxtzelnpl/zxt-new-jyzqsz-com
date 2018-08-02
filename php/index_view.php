@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href=" /assets/home_new/bitbug_favicon.ico" />
     <title><?php echo $tdk['seo_t']; ?></title>
     <meta name="keywords" content="<?php echo $tdk['seo_k']; ?>">
     <meta name="description" content="<?php echo $tdk['seo_d']; ?>">
@@ -30,6 +31,8 @@
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div><!--左箭头-->
+        <div class="swiper-button-next"></div><!--右箭头-->
     </div>
 
 
@@ -37,7 +40,7 @@
     <div class="index-number">
         <div class="index-number-wrap">
             <ul class="index-number-ul" id="zhishu">
-                <li class="index-number-li red">
+                <!-- <li class="index-number-li red">
                     <span class="name">上证指数：</span>
                     <span class="number">2918.77</span>
                     <span class="rise">8.79</span>
@@ -54,7 +57,7 @@
                     <span class="number">1563.15</span>
                     <span class="rise">15.98</span>
                     <span class="percent">1.03%</span>
-                </li>
+                </li> -->
             </ul>
             <p class="index-number-p">
                 <img class="index-number-p-img" src="/assets/home_new/images/icon_home_app_xz.png" alt="">
@@ -279,7 +282,11 @@ $(function(){
         el: '.swiper-pagination',
         type:'bullets',
         clickable :true
-      }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     })
 
     var bannerSwiper = new Swiper('.teacher .swiper-container', {
@@ -346,8 +353,7 @@ function getMsg()
           $("#zhishu").html(html);
         } 
     })
-   
 }
 getMsg();
-setInterval("getMsg()", "5000");
+setInterval(getMsg, "5000");
 </script>

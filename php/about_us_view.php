@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href=" /assets/home_new/bitbug_favicon.ico" />
     <title><?php echo $tdk['seo_t']; ?></title>
     <meta name="keywords" content="<?php echo $tdk['seo_k']; ?>">
     <meta name="description" content="<?php echo $tdk['seo_d']; ?>">
@@ -46,6 +47,7 @@
                         <img class="content-img-p4" src="/assets/home_new/images/aboutus/common_au_pic_4.png" alt="">
                     </div>
                 </div>
+                <div class="content-kong"></div>
             </div>
 
             <!--第三页-->
@@ -91,6 +93,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="content-kong"></div>
             </div>
 
             <!--第四页-->
@@ -106,6 +109,7 @@
                     <img class="content-img" src="/assets/home_new/images/aboutus/common_au_team_gjd.png" alt="">
                     <img class="content-img" src="/assets/home_new/images/aboutus/common_au_team_sty.png" alt="">
                 </div>
+                <div class="content-kong"></div>
             </div>
 
             <!--第五页-->
@@ -143,6 +147,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="content-kong"></div>
             </div>
 
             <!--第六页-->
@@ -203,11 +208,15 @@
   }
 
   function resize(){
-    // var oneHeight = $('.one').height();
-    //
-    // $('.one .content-img').css({
-    //   marginTop:(oneHeight-197-400)/2
-    // })
+    var $siderToolbar = $('.sider-toolbar');
+    var innerWidth = window.innerWidth;
+    var contentWidth = 1200;
+    var _space = (innerWidth - contentWidth)/2;
+    var space = _space>0?_space:0;
+    var left = contentWidth + space*2 - 20 - $siderToolbar[0].getBoundingClientRect().width;
+    $siderToolbar.css({
+      left:left
+    })
   }
 
   $(function(){

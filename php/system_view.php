@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link rel="shortcut icon" href=" /assets/home_new/bitbug_favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     	<meta name="apple-mobile-web-app-capable" content="yes" />
     	<meta name="format-detection" content="telephone=no,email=no,address=no" />

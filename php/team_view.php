@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href=" /assets/home_new/bitbug_favicon.ico" />
     <title>投顾团队</title>
         <!--common-->
     <link rel="stylesheet" href="/assets/home_new/css/QGindex.css"/>

@@ -125,7 +125,7 @@
     margin:0 15px;
     width: 380px;
     height: 580px;
-    box-shadow: 0 6px 24px #f2f2f2;
+    box-shadow: 0 8px 36px rgba(0, 0, 0, 0.15);
     background: url("/assets/home_new/images/icon_cp_btbg.png") no-repeat center top;
     .title {
       height: 72px;
@@ -190,14 +190,22 @@
     .link{
       display:block;
       margin:20px auto 0;
+      box-sizing: border-box;
       width:140px;
       height:36px;
-      line-height:36px;
+      border:2px solid @primaryColor;
+      line-height:32px;
       border-radius:18px;
       font-size:16px;
       text-align: center;
-      color:#fff;
-      background: @primaryColor;
+      color:@primaryColor;
+      background: #fff;
+
+      transition:all .2s;
+      &:hover{
+        color:#fff;
+        background: @primaryColor;
+      }
     }
   }
   &-sub{
@@ -227,7 +235,7 @@
       padding:40px;
       width:580px;
       height:240px;
-      border:1px solid #f0f3f5;
+      border:1px solid #e5e5e5;
       box-sizing: border-box;
 
       background:#fff;
@@ -273,10 +281,11 @@
 }
 
 .si-ren-ding-zhi{
+  padding-bottom: 80px;
   background:#fff;
 }
 .zhu-ti-huo-dong{
-  background:#fff;
+
 }
 
 .big-img{

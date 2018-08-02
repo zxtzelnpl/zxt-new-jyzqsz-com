@@ -98,8 +98,8 @@
                         <img class="content-img-p3" src="/assets/home_new/images/aboutus/common_au_pic_3.png" alt="">
                         <img class="content-img-p4" src="/assets/home_new/images/aboutus/common_au_pic_4.png" alt="">
                     </div>
-                    <div class="content-kong"></div>
                 </div>
+                <div class="content-kong"></div>
             </div>
 
             <!--第三页-->
@@ -269,10 +269,8 @@
     <a class="sider-toolbar-box sider-toolbar-box-customer"
        href="tencent://message/?uin=2238086832&Site=test315.nesky.cn&Menu=yes">
     </a>
-    <div class="line"></div>
     <div class="sider-toolbar-box sider-toolbar-box-statement" data-action="show-statement">
     </div>
-    <div class="line"></div>
     <div class="sider-toolbar-box sider-toolbar-box-scroll" data-action="scroll-to-top">
     </div>
 </div>
@@ -296,11 +294,15 @@
 
 
   function resize(){
-    // var oneHeight = $('.one').height();
-    //
-    // $('.one .content-img').css({
-    //   marginTop:(oneHeight-197-400)/2
-    // })
+    var $siderToolbar = $('.sider-toolbar');
+    var innerWidth = window.innerWidth;
+    var contentWidth = 1200;
+    var _space = (innerWidth - contentWidth)/2;
+    var space = _space>0?_space:0;
+    var left = contentWidth + space*2 - 20 - $siderToolbar[0].getBoundingClientRect().width;
+    $siderToolbar.css({
+      left:left
+    })
   }
 
   $(function(){

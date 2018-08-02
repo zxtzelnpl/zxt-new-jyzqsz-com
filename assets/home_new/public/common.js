@@ -57,37 +57,46 @@ $(function(){
   var siderToolBarB = parseInt(getComputedStyle(siderToolBar).bottom);
   var footer = document.querySelector('footer.footer');
   var innerHeight = window.innerHeight;
+  var contentWidth = 1350;
   var delta = 80;
   var show = 'show';
   function checkSiderBar(){
     var scrollY = window.scrollY;
     var currentFooterTop = footer.getBoundingClientRect().top;
 
-    var className = trim(siderToolBar.className).split(' ');
     if(scrollY<innerHeight){
-      if(className.indexOf(show)>-1){
-        siderToolBar.className = className.filter(function(clazz){
-          return clazz !==show;
-        }).join(' ');
-      }
+      $(siderToolBar).removeClass(show)
     }
     else{
-      if(className.indexOf(show)===-1){
-        className.push(show)
-        siderToolBar.className = className.join(' ');
-      }
+      $(siderToolBar).addClass(show)
     }
 
     if(currentFooterTop < innerHeight - siderToolBarB + delta){
-      siderToolBar.style="bottom:"+(innerHeight-currentFooterTop+delta)+"px";
+      $(siderToolBar).css({
+        bottom:innerHeight-currentFooterTop+delta
+      })
     }
     else{
-      siderToolBar.style=""
+      $(siderToolBar).css({
+        bottom:''
+      })
     }
   }
   $(document).on('scroll',checkSiderBar);
 
 
+  /*侧边栏-横向*/
+  function siderToolBarVertical(){
+    var innerWidth = window.innerWidth;
+    var _space = (innerWidth - contentWidth)/2;
+    var space = _space>0?_space:0;
+    var left = contentWidth + space*2 - 30 - siderToolBar.getBoundingClientRect().width;
+    $(siderToolBar).css({
+      left:left
+    })
+  }
+  siderToolBarVertical();
+  $(window).on('resize',siderToolBarVertical);
 
   /*回到顶部工具*/
   function scrollToTop(){
