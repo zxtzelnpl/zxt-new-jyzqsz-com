@@ -86,14 +86,12 @@
                    </div>
                    <div class="product-box-pic">
                        <img class="product-box-pic-img" src="<?php echo $v['pic_path']; ?>" alt="<?php echo $v['name']; ?>">
-                       <div class="cover"></div>
                    </div>
                 </div>
                 <?php else: ?>
                 <div class="product-box">
                     <div class="product-box-pic">
                         <img class="product-box-pic-img" src="<?php echo $v['pic_path']; ?>" alt="<?php echo $v['name']; ?>">
-                        <div class="cover"></div>
                     </div>
                     <div class="product-box-info">
                         <h2 class="product-box-info-title"><?php echo $v['name']; ?></h2>
@@ -105,7 +103,7 @@
                 </div>
                 <?php endif; ?>
            <?php endforeach; ?>
-                
+
             </div>
         </div>
     </div>
@@ -202,11 +200,11 @@
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
-                                    
+
                                 </div>
                             </div>
                         <?php endforeach; ?>
-                            
+
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -322,18 +320,18 @@ $(function(){
 <script>
 function getMsg()
 {
-    $.ajax({  
-        url: '/index/getMsg',  
-        type: 'POST',  
-        data: {url:"http://hq.sinajs.cn/list=s_sh000001,s_sz399001,s_sz399006",},  
+    $.ajax({
+        url: '/index/getMsg',
+        type: 'POST',
+        data: {url:"http://hq.sinajs.cn/list=s_sh000001,s_sz399001,s_sz399006",},
         dataType:"json",
-        success: function (data) { 
+        success: function (data) {
          //判断指数上涨下跌
-         
+
         if(Number(data["shangzhi"][1]).toFixed(2)<0){
             var shangzhi = '<li class="index-number-li green"><span class="name">上证指数：</span><span class="number">'+Number(data["shangzhi"][1]).toFixed(2)+'</span><span class="rise">'+Number(data["shangzhi"][0]).toFixed(2)+'</span><span class="percent">'+Number(data["shangzhi"][2]).toFixed(2)+'%</span></li>';
         }
-         
+
         else{
          var shangzhi = '<li class="index-number-li red"><span class="name">上证指数：</span><span class="number">'+Number(data["shangzhi"][1]).toFixed(2)+'</span><span class="rise">'+Number(data["shangzhi"][0]).toFixed(2)+'</span><span class="percent">'+Number(data["shangzhi"][2]).toFixed(2)+'%</span></li>';
         }
@@ -351,7 +349,7 @@ function getMsg()
         }
          var html=shangzhi + shengzhi + chuangye;
           $("#zhishu").html(html);
-        } 
+        }
     })
 }
 getMsg();
