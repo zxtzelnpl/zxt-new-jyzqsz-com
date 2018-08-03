@@ -194,7 +194,6 @@
 .product-box {
   display: flex;
   width: 600px;
-  cursor: pointer;
   &-info {
     box-sizing: border-box;
     padding: 30px 40px;
@@ -260,11 +259,8 @@
     }
   }
 
-  &:hover .cover {
-    display: block;
-  }
 
-  &:hover &-info-link{
+  &-info-link:hover{
     color: #fff;
     background: @primaryColor;
   }
@@ -274,54 +270,6 @@
   }
   &:nth-child(3) &-pic-img, &:nth-child(4) &-pic-img {
     right: -20px;
-  }
-  &:nth-child(1) .cover, &:nth-child(2) .cover {
-    &:before {
-      position: absolute;
-      top: 136px;
-      left: -32px;
-      display: block;
-      content: "";
-      border-top: 12px solid transparent;
-      border-bottom: 12px solid transparent;
-      border-left: 16px solid transparent;
-      border-right: 16px solid @primaryColor
-    }
-    &:after {
-      position: absolute;
-      top: 138px;
-      left: -27px;
-      display: block;
-      content: "";
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 14px solid transparent;
-      border-right: 14px solid #E7E7E7
-    }
-  }
-  &:nth-child(3) .cover, &:nth-child(4) .cover {
-    &:before {
-      position: absolute;
-      top: 136px;
-      right: -32px;
-      display: block;
-      content: "";
-      border-top: 12px solid transparent;
-      border-bottom: 12px solid transparent;
-      border-right: 16px solid transparent;
-      border-left: 16px solid @primaryColor;
-    }
-    &:after {
-      position: absolute;
-      top: 138px;
-      right: -27px;
-      display: block;
-      content: "";
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-right: 14px solid transparent;
-      border-left: 14px solid #E7E7E7
-    }
   }
 }
 
