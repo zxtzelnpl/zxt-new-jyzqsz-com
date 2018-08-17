@@ -1,0 +1,55 @@
+@import "./common/const";
+.dynamics-info{
+  margin:0 auto;
+  width:1200px;
+  padding:0 40px;
+  box-sizing: border-box;
+  background:#fff;
+  &-head{
+    height:72px;
+    line-height:72px;
+    border-bottom:1px solid @lineColor;
+    font-size:24px;
+    color:#333333;
+  }
+  &-content{
+    &-li{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      margin:40px 0;
+      padding:30px;
+      height:200px;
+      box-sizing: border-box;
+      background:#f2f2f2;
+      transition: box-shadow 200ms linear;
+      &:last-child{
+        margin-bottom:0;
+      }
+      &:hover{
+        box-shadow:0 8px 12px rgba(0, 0, 0, 0.15);
+      }
+
+
+      .dynamics-info{
+        &-title{
+          font-size:24px;
+          color:#333333;
+          line-height: 1;
+          .text-hover();
+        }
+        &-sub{
+          margin-top:12px;
+          font-size:16px;
+          color:#999999;
+          line-height: 1;
+        }
+        &-text{
+          font-size:16px;
+          color:#666666;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "./common/const";
+
+/**{margin: 0;padding: 0;list-style: none;}*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-width: 1200px;
+  overflow: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  background: #f0f3f5;
+  font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+input, button, select {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+/*清楚浮动*/
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0
+}
+
+.clearfix {
+  zoom: 1
+}
+
+/*面包屑导航*/
+.crumbs {
+  margin: 0 auto;
+  width: 1200px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.crumbs-add{
+  .text-hover();
+}
+.crumbs-add:before {
+  display: inline;
+  padding: 0 5px;
+  content: ">";
+}
+
+/*分页*/
+.pagination {
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  height:120px;
+}

@@ -1,0 +1,298 @@
+@primaryColor: #44a2f2;
+.product{
+  padding-bottom: 100px;
+}
+.wrap{
+  margin:0 auto;
+  width:1200px;
+  h2.title{
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding:40px 0;
+    height:40px;
+    line-height: 1;
+    font-size:36px;
+    color:#333;
+    .title-sub{
+      padding-left:30px;
+      font-weight: normal;
+      font-size:16px;
+    }
+  }
+
+}
+.banner{
+  margin:0 auto;
+  &-img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+}
+
+/*战绩回顾*/
+.review{
+  background:#fff;
+  &-title{
+    margin:0 auto;
+    width:1200px;
+    height:120px;
+    border-bottom:1px solid #e5e5e5;
+    box-sizing: border-box;
+    line-height: 120px;
+    font-size:36px;
+    color:#333;
+  }
+  &-nav{
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin:0 auto 50px;
+    width:1200px;
+    height:90px;
+    box-sizing: border-box;
+    border-bottom:1px solid #e5e5e5;
+    font-size:24px;
+    color:#999999;
+    &-li{
+      margin-bottom:-1px;
+      height:45px;
+      width:120px;
+      border-bottom:4px solid transparent;
+      text-align: center;
+      cursor:pointer;
+      &:hover,&.active{
+        color:@primaryColor;
+        border-bottom-color:@primaryColor;
+      }
+      &:nth-child(2){
+        margin-left:290px;
+        margin-right:290px;
+      }
+    }
+    &-contents{
+      margin:0 auto;
+      width:1200px;
+      .content{
+        position:relative;
+        width:1200px;
+        display:none;
+        &.active{
+          display:block;
+        }
+      }
+    }
+  }
+  &-swiper-container{
+    margin-left:-15px;
+    width:1230px;
+    padding-bottom:40px;
+    box-sizing: border-box;
+    .swiper-slide{
+      display:flex;
+      justify-content: center;
+      &:first-child{
+        margin-left:0;
+      }
+      &:last-child{
+        margin-right:0;
+      }
+    }
+  }
+  &-swiper-button-prev{
+    position:absolute;
+    top:45%;
+    left:-48px;
+    width:24px;
+    height:24px;
+    background:url("/assets/home_new/images/icon_cp_left.png") no-repeat center center;
+    cursor:pointer;
+    z-index: 2;
+  }
+  &-swiper-button-next{
+    position:absolute;
+    top:45%;
+    right:-48px;
+    width:24px;
+    height:24px;
+    background:url("/assets/home_new/images/icon_cp_right.png") no-repeat center center;
+    cursor:pointer;
+    z-index: 2;
+  }
+
+  &-box {
+    margin:0 15px;
+    width: 380px;
+    height: 580px;
+    box-shadow: 0 8px 36px rgba(0, 0, 0, 0.15);
+    background: url("/assets/home_new/images/icon_cp_btbg.png") no-repeat center top;
+    .title {
+      height: 72px;
+      line-height: 72px;
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+    }
+    .chart {
+      margin: 20px auto 0;
+      width: 190px;
+      height: 190px;
+      line-height: 190px;
+      font-size: 30px;
+      color: @primaryColor;
+      text-align: center;
+      background: url("/assets/home_new/images/icon_cp_zgzf.png") center center no-repeat;
+      background-size: cover;
+    }
+    .sub {
+      margin-top: 8px;
+      font-size: 14px;
+      text-align: center;
+      color: @primaryColor;
+    }
+    .detail {
+      padding-top: 30px;
+      height: 150px;
+      .date {
+        margin: 12px 0 0 56px;
+        padding-left: 36px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #333333;
+        background: url("/assets/home_new/images/icon_cp_time.png") left center no-repeat;
+      }
+      .stock {
+        margin: 12px 0 0 56px;
+        padding-left: 36px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #333333;
+        background: url("/assets/home_new/images/icon_cp_bd.png") left center no-repeat;
+      }
+      .state {
+        margin: 12px 0 0 56px;
+        padding-left: 36px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #333333;
+        background: url("/assets/home_new/images/icon_cp_zt.png") left center no-repeat;
+      }
+      .compare {
+        margin: 12px 0 0 56px;
+        padding-left: 36px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #333333;
+        background: url("/assets/home_new/images/icon_cp_vs.png") left center no-repeat;
+      }
+    }
+    .link{
+      display:block;
+      margin:20px auto 0;
+      box-sizing: border-box;
+      width:140px;
+      height:36px;
+      border:2px solid @primaryColor;
+      line-height:32px;
+      border-radius:18px;
+      font-size:16px;
+      text-align: center;
+      color:@primaryColor;
+      background: #fff;
+
+      transition:all .2s;
+      &:hover{
+        color:#fff;
+        background: @primaryColor;
+      }
+    }
+  }
+  &-sub{
+    height:60px;
+    font-size:16px;
+    text-align: center;
+    color:#999;
+  }
+}
+
+
+/*产品*/
+.product-content{
+  padding-bottom: 40px;
+  .product-boxes{
+    display:flex;
+    flex-wrap:wrap ;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .product-box{
+    &-link{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      padding:40px;
+      width:580px;
+      height:240px;
+      border:1px solid #e5e5e5;
+      box-sizing: border-box;
+
+      background:#fff;
+      transition: all 0.2s linear;
+      &:hover{
+        transform: translate3d(0,-2px,0);
+        box-shadow: 0 8px 36px rgba(68,162,242,.4);
+      }
+    }
+
+    &-img{
+      display:block;
+      width:240px;
+      height:160px;
+    }
+    &-info{
+      display:flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      width:240px;
+      height:160px;
+      padding-left:20px;
+      .box-title{
+        font-size:24px;
+        color:#333333;
+      }
+      .box-title-sub{
+        margin-top:16px;
+        font-size:16px;
+        color:#666666;
+      }
+    }
+  }
+  .red{
+    color:#f64a67;
+  }
+}
+
+
+.jun-yin-cao-pan{
+  background:#fff;
+}
+
+.si-ren-ding-zhi{
+  padding-bottom: 80px;
+  background:#fff;
+}
+.zhu-ti-huo-dong{
+
+}
+
+.big-img{
+  display:block;
+  width:1200px;
+  height:auto;
+  &:hover{
+    opacity: .8;
+  }
+}

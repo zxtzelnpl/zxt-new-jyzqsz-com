@@ -1,0 +1,200 @@
+@import "./common/const";
+.page-information{
+  margin:0 auto 100px;
+  width:1200px;
+  &-boxes{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &-box{
+    position:relative;
+    box-shadow: 0 0 24px rgba(68,162,242,.2);
+    background:#fff;
+
+    .title{
+
+      height:80px;
+      border-bottom: 1px solid #e5e5e5;
+      line-height:79px;
+
+      font-size:24px;
+      color:#333;
+    }
+
+    .more{
+      position:absolute;
+      top:32px;
+
+      font-size:16px;
+      line-height:1;
+      color:#999;
+
+      .text-hover();
+    }
+  }
+}
+
+.dynamics-info,.investment-view,.top-news{
+  margin-top: 40px;
+  box-sizing: border-box;
+  width:380px;
+  height:574px;
+  padding:0 20px;
+  .title{
+    padding-left:45px;
+  }
+  .more{
+    right:20px;
+  }
+
+  .li-top{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+    height:134px;
+    border-bottom: 1px solid #e5e5e5;
+    .head{
+      display:flex;
+      align-self: center;
+      width:100%;
+      height:28px;
+      .head-date{
+        display:flex;
+        width:72px;
+      }
+      .month{
+        width:36px;
+        height:28px;
+        box-sizing: border-box;
+        line-height:26px;
+        text-align: center;
+        border:1px solid @primaryColor;
+        color:#fff;
+        background:@primaryColor;
+      }
+      .date{
+        width:36px;
+        height:28px;
+        box-sizing: border-box;
+        line-height:26px;
+        text-align: center;
+        border:1px solid @primaryColor;
+        color:@primaryColor;
+        background:#fff;
+      }
+      &-title{
+        padding-left:20px;
+        font-weight:bold;
+        line-height: 28px;
+        font-size:18px;
+        .text-hover();
+        .no-warp();
+      }
+    }
+    .body{
+      margin-top: 20px;
+      color:#989898;
+      font-size:14px;
+    }
+  }
+
+  .li{
+    display:flex;
+    align-items: center;
+    height:72px;
+    border-bottom: 1px solid #e5e5e5;
+
+    &-date{
+      font-size:14px;
+      color:#666;
+    }
+    &-summary{
+      padding-left:20px;
+      font-size:16px;
+      color:#333;
+      .no-warp();
+      .text-hover();
+    }
+  }
+}
+.dynamics-info .title{
+  background:url("/assets/home_new/images/icon_zx_dt.png") no-repeat -4px center;
+}
+.investment-view .title{
+  background:url("/assets/home_new/images/icon_zx_gd.png") no-repeat -4px center;
+}
+.top-news .title{
+  background:url("/assets/home_new/images/icon_zx_tt.png") no-repeat -4px center;
+}
+
+.strategic-summary,.game{
+  box-sizing: border-box;
+  padding:0 20px;
+  .more{
+    right:20px;
+  }
+}
+.strategic-summary{
+  margin-top:60px;
+  width:790px;
+  .li{
+    display:flex;
+    align-items: center;
+
+    height:240px;
+    border-bottom: 1px solid #e5e5e5;
+    &-img{
+      display:block;
+      width:220px;
+      height:160px;
+      .img-hover();
+    }
+    &-info{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      box-sizing: border-box;
+      width:530px;
+      height:160px;
+      padding:8px 0 8px 20px;
+      &-title{
+        line-height: 1;
+        .in-title{
+          display:block;
+          font-size:24px;
+          color:#333;
+          font-weight:bold;
+          .no-warp();
+          .text-hover();
+        }
+        .date{
+          margin-top: 12px;
+          font-size:16px;
+          color:#999;
+        }
+      }
+      &-summary{
+        font-size:16px;
+        color:#666;
+      }
+    }
+  }
+}
+
+.game{
+  margin-top:60px;
+  width:380px;
+  .li{
+    display:block;
+    margin:40px 0;
+    &-img{
+      width:340px;
+      height:230px;
+      .img-hover();
+    }
+  }
+}
