@@ -1,32 +1,37 @@
-const dist = 'dist';
+const dist = 'assets';
 const src = 'src';
+const pc = 'home_new';
+const mobile = 'home_mobile';
+
+function makeUrl(dir){
+  return {
+    javascript:{
+      from:`${src}/javascript/${dir}/*.js`,
+      watch:`${src}/javascript/${dir}/**.js`,
+      to:`${dist}/${dir}/javascript`,
+    },
+    style:{
+      from:`${src}/less/${dir}/*.less`,
+      watch:[`${src}/less/const.less`,`${src}/less/${dir}/**.less`],
+      to:`${dist}/${dir}/css`,
+    },
+    html:{
+      from:`${src}/template/${dir}/*.html`,
+      watch:`${src}/template/${dir}/**.html`,
+      to:`${dist}/${dir}/html`,
+    }
+  }
+}
 
 const config={
   root:'./',
   dist:`${dist}/`,
   src:`${src}/`,
-  javascript:{
-    from:`${src}/javascript/*.js`,
-    to:`${dist}/javascript`,
-    watch:`${src}/javascript/*.js`,
-    plugins:`${src}/javascript/plugins/*.js`,
-    tools:`${src}/javascript/tools/*.js`,
-    exclude:``
-  },
-  style:{
-    from:`${src}/less/*.less`,
-    to:`${dist}/css`,
-    watch:`${src}/less/**/*.less`,
-    exclude:``
-  },
-  html:{
-    from:`${src}/*.html`,
-    to:`${dist}`,
-    template:`${src}/template/*.html`,
-    hbs:`${src}/*.hbs`,
-    watch:`${src}/**/*.html`,
-    exclude:`${src}/template/*.html`
-  },
+
+  pc:makeUrl(pc),
+
+  mobile:makeUrl(mobile),
+
   AUTOPREFIXER_BROWSERS:[
     'ie >= 10',
     'ie_mob >= 10',

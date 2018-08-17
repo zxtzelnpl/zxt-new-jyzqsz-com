@@ -9,8 +9,10 @@ out
 gen
 node_modules
 bower_components
-assets/home_new/css/*.css
-html
+assets/home_new/css/
+assets/home_new/html/
+assets/home_mobile/css/
+assets/home_mobile/html/
 pdf
 zxt-new-jyzqsz-com.rar
 **/*.png
