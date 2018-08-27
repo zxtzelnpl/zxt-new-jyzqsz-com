@@ -1,0 +1,250 @@
+@import './common/const';
+
+.container {
+  margin: 0 auto;
+  width: 7.5rem;
+  background: rgba(240, 243, 245, 1);
+}
+
+/*内部标题*/
+.title {
+  margin: 0 auto;
+  font-size: @fontSize1;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*双下划线*/
+.double-line {
+  margin: .3rem auto 0;
+  border-top: 1px solid #222222;
+  border-bottom: 2px solid #222222;
+  height: 2px;
+  width: .8rem;
+}
+
+.one {
+  &-img {
+    display: block;
+    width: 7.5rem;
+    height: 4.2rem;
+  }
+}
+
+.two {
+  padding: .4rem .24rem .7rem;
+  background: #ffffff;
+  .text {
+    margin-top: .2rem;
+    font-size: @fontSize2;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .imgs {
+    margin-top: .6rem;
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    .img-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.8rem;
+      height: 4rem;
+    }
+    .img-2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 3.98rem;
+      height: 2.56rem;
+    }
+    .img-3 {
+      position: absolute;
+      bottom: 0;
+      right: 2.11rem;
+      width: 1.87rem;
+      height: 1.2rem;
+    }
+    .img-4 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 1.87rem;
+      height: 1.2rem;
+    }
+  }
+}
+
+.three {
+  padding: .4rem 0 .7rem;
+  width: 100%;
+
+  background: url("@{imgUrl}/pic_au_fzlc_bg.jpg") center bottom no-repeat;
+  background-size: 7.5rem 16.5rem;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: .4rem;
+    &-box {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+
+      box-sizing: border-box;
+
+      width: 50%;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        &-year {
+          font-size: @fontSize2;
+          font-weight: bold;
+        }
+        &-br {
+          margin-top: .16rem;
+          width: .24rem;
+          height: 1px;
+          background: #cccccc;
+        }
+        &-text {
+          margin-top: .16rem;
+          color: #333;
+        }
+      }
+
+      .img {
+        position: absolute;
+
+        width: 13px;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .circle {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          padding: 4px;
+          border: 1px solid #424456;
+          background: #424456;
+          background-clip: content-box;
+        }
+        .line {
+          flex-grow: 1;
+          width: 2px;
+          height: 100%;
+          background: #333333;
+        }
+      }
+
+      &.left {
+        .img {
+          right: -6.5px;
+        }
+        .box {
+          align-items: flex-end;
+          padding: 0 .35rem .4rem .9rem;
+        }
+        .box-text {
+          text-align: right;
+        }
+      }
+      &.right {
+        align-self: flex-end;
+        .img {
+          left: -6.5px;
+        }
+        .box {
+          padding: 0 .9rem .4rem .35rem;
+        }
+      }
+    }
+  }
+}
+
+.four {
+  padding: .4rem 0 .2rem 0;
+  background: #ffffff;
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: .3rem .75rem 0;
+    &-img {
+      margin-bottom: .4rem;
+      .square(2.8rem);
+    }
+  }
+}
+
+.five {
+  padding: .4rem 0 .6rem;
+  width: 100%;
+
+  color: #fff;
+
+  background: url("@{imgUrl}/pic_au_yxzz_bg.jpg") center top no-repeat;
+  background-size: 100% 100%;
+
+  .double-line {
+    border-color: #ffffff;
+  }
+
+  &-content {
+    padding: .3rem .24rem 0;
+    &-box {
+      margin:0 auto;
+      width: 7.02rem;
+      &-img {
+        display: block;
+        width: 7.02rem;
+        height: 2.4rem;
+        background: url("/assets/home_new/images/aboutus/usfour-big4.jpg") center center no-repeat;
+        background-size: cover;
+      }
+      &-span {
+        display: block;
+        .allHeight(.6rem);
+        text-align: center;
+      }
+    }
+
+    &-wrap{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-box-small{
+      width:2.2rem;
+      &-img{
+        display: block;
+        width:2.2rem;
+        height:2.2rem;
+        &.yxxkz{
+          background: url("/assets/home_new/images/aboutus/usfour-big1.jpg") center center no-repeat;
+          background-size: cover;
+        }
+        &.xywzrz{
+          background: url("/assets/home_new/images/aboutus/usfour-big2.jpg") center center no-repeat;
+          background-size: cover;
+        }
+        &.yyzz{
+          background: url("/assets/home_new/images/aboutus/usfour-big3.jpg") center center no-repeat;
+          background-size: cover;
+        }
+      }
+      &-span{
+        display: block;
+        .allHeight(.6rem);
+        text-align: center;
+      }
+    }
+  }
+}
