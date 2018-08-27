@@ -1,0 +1,248 @@
+@import './common/const';
+
+.container {
+  margin: 0 auto;
+  padding-bottom: .4rem;
+  width: 7.5rem;
+  background: rgba(240, 243, 245, 1);
+}
+
+.banner{
+  display:block;
+  width:7.5rem;
+  height:4.2rem;
+}
+
+.title1{
+  display:flex;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding-left: .25rem;
+  height: 1rem;
+  border-bottom:1px solid #E6E6E6;
+
+  font-size:@fontSize1;
+
+  background: #ffffff;
+}
+
+
+@reviewWidth:5.6rem;
+@reviewHeight:8rem;
+.tab{
+  padding-bottom: .68rem;
+  &-head{
+    display:flex;
+    align-items:stretch;
+    justify-content: space-between;
+
+    margin-bottom: .4rem;
+    box-sizing: border-box;
+    padding:0 .8rem;
+    height:1rem;
+    background: #ffffff;
+    &-nav{
+      display:flex;
+      align-items: center;
+
+      padding:0 .1rem;
+
+      font-size: @fontSize2;
+      color:#999999;
+      border-bottom:.04rem solid transparent;
+      &.active{
+        font-weight: bold;
+        color:#44A2F2;
+        border-bottom-color:#44A2F2;
+      }
+    }
+  }
+  &-wrap{
+
+    height:@reviewHeight;
+    overflow: hidden;
+  }
+  &-content{
+    margin:0 auto;
+    display:none;
+    width:@reviewWidth;
+    height:@reviewHeight;
+    &.active{
+      display:block;
+    }
+    .swiper-container{
+      overflow: visible;
+    }
+  }
+  &-info{
+    margin:.41rem auto 0;
+    width:@reviewWidth;
+    color:#999999;
+  }
+}
+.review-box{
+  position: relative;
+
+  display: block;
+  width:@reviewWidth;
+  height:@reviewHeight;
+  background: #ffffff;
+  .box{
+    &-title{
+      .center();
+
+      width:@reviewWidth;
+      height:.8rem;
+      font-size: @fontSize1;
+      font-weight: bold;
+      color:#ffffff;
+      background:url("@{imgUrl}/icon_cp_btbg.png") no-repeat center top;
+      background-size:5.6rem .8rem;
+    }
+    &-chart{
+      .center();
+      margin:.3rem auto 0;
+      width:2.4rem;
+      height:2.4rem;
+
+      font-size: @fontSize1;
+      color:@primaryColor;
+      font-weight: bold;
+
+      background: url("@{imgUrl}/icon_cp_zgzf.png") no-repeat center center;
+      background-size: 2.4rem 2.4rem;
+    }
+    &-sub{
+      margin-bottom: .2rem;
+      text-align: center;
+      font-size: @fontSize3;
+      color:@primaryColor;
+    }
+    &-detail{
+      font-size:.3rem;
+      color:@fontSize2;
+      &-data{
+        margin-bottom: .25rem;
+        padding-left:.96rem;
+        height:.36rem;
+        background: url("@{imgUrl}/icon_cp_time.png") .4rem center no-repeat;
+        background-size: .36rem .36rem;
+      }
+      &-stock{
+        margin-bottom: .25rem;
+        padding-left:.96rem;
+        height:.36rem;
+        background: url("@{imgUrl}/icon_cp_bd.png") .4rem center no-repeat;
+        background-size: .36rem .36rem;
+      }
+      &-state{
+        margin-bottom: .25rem;
+        padding-left:.96rem;
+        height:.36rem;
+        background: url("@{imgUrl}/icon_cp_zt.png") .4rem center no-repeat;
+        background-size: .36rem .36rem;
+      }
+      &-compare{
+        margin-bottom: .25rem;
+        padding-left:.96rem;
+        height:.36rem;
+        background: url("@{imgUrl}/icon_cp_vs.png") .4rem center no-repeat;
+        background-size: .36rem .36rem;
+      }
+    }
+    &-link{
+      @width:2.8rem;
+      position:absolute;
+      left:(@reviewWidth - @width)/2;
+      bottom:.5rem;
+
+      .center();
+      width: @width;
+      height: .72rem;
+      border-radius: 30px 30px;
+      color:#ffffff;
+      background: @primaryColor;
+
+      &:active{
+        background: darken(@primaryColor,10%);
+      }
+    }
+  }
+
+}
+
+/*产品*/
+.product{
+  margin-bottom: .2rem;
+  padding: 0 .24rem;
+  background: #ffffff;
+  &-title{
+    height:1rem;
+    line-height: 1rem;
+    font-size: .3rem;
+  }
+  &-sub{
+    padding-left:.2rem;
+    font-size: .24rem;
+    color:#999999;
+  }
+
+  &-box{
+    display:flex;
+
+    padding:.4rem 0;
+    border-top:1px solid #E5E5E5;
+
+    &:first-child{
+      padding-top: 0;
+      border-top:0;
+    }
+    &:active{
+      background: #dddddd;
+    }
+
+    .box-img{
+      width:2.4rem;
+      height: 1.6rem;
+    }
+
+    .box-info{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: .24rem;
+    }
+    .box-title{
+      &-main{
+        display: block;
+        font-size: .3rem;
+        color:#333333;
+      }
+      &-sub{
+        display: block;
+        font-size: .24rem;
+        color:#999999;
+      }
+    }
+    .box-price{
+      display: block;
+      .price{
+        color:#F64A67;
+      }
+    }
+  }
+
+  &-banner{
+    width: 100%;
+    padding-bottom: .4rem;
+    &:active{
+      opacity: .8;
+    }
+    .banner-img{
+      display:block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

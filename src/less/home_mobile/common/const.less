@@ -1,0 +1,271 @@
+@import '../../const';
+@imgUrl:'/assets/home_mobile/image';
+
+@fontSize1:.36rem;
+@fontSize2:.3rem;
+@fontSize3:.24rem;
+
+/*垂直居中*/
+.allHeight(@height){
+  height:@height;
+  line-height: @height;
+}
+/*正方形*/
+.square(@side){
+  width:@side;
+  height:@side;
+}
+/*完全居中*/
+.center{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+/*文本溢出变...*/
+.no-wrap() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*多行文本溢出*/
+.line-clamp {
+  overflow: hidden; /*超出的文本隐藏*/
+  text-overflow: ellipsis; /*溢出用省略号显示*/
+  display: -webkit-box; /*将对象作为弹性伸缩盒子模型显示。*/
+
+  /* autoprefixer: off */
+  -webkit-line-clamp: 2; /*这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。*/
+  /* autoprefixer: on */
+  -webkit-box-orient: vertical; /*从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）*/
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  animation-name: loading;
+  animation-timing-function: linear;
+  animation-duration: 200ms;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+html, body {
+  display:block;
+  margin: 0;
+  padding: 0;
+  min-width:100%;
+  min-height:100%;
+}
+body{
+  font-size:.24rem;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p{
+  margin:0;
+  padding:0;
+}
+h4{
+  margin:0;
+  padding: 0;
+}
+ul,li{
+  margin:0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+/*头部信息*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 0.88rem;
+  background: rgba(255, 255, 255, 1);
+}
+.header-logo {
+  margin-left: .24rem;
+  width: 1.84rem;
+  height: .51rem;
+  &-img {
+    display: block;
+    width:100%;
+    height:100%;
+  }
+}
+.header-menu {
+  position:relative;
+  @barHeight: .06rem;
+  @paddingValue: (.36rem - @barHeight)/2;
+  margin-right: .24rem;
+  box-sizing: border-box;
+  height: .36rem;
+  width: .36rem;
+  padding: @paddingValue 0;
+  background: #333333;
+  background-clip: content-box;
+
+  &::before,&::after{
+    position:absolute;
+    left:0;
+    content:"";
+    display:block;
+    height:@barHeight;
+    width:.36rem;
+    background: #333333;
+
+    transition:all .2s ease;
+  }
+  &::before{
+    top:0;
+  }
+  &::after{
+    bottom:0;
+  }
+
+
+  &.active{
+    background: #ffffff;
+    &::before{
+      transform:translateY(@paddingValue) rotate(45deg)
+    }
+    &::after{
+      transform:translateY(-@paddingValue) rotate(-45deg)
+    }
+  }
+}
+
+
+
+/*侧边菜单栏*/
+.side-menu {
+  position:fixed;
+  top:0;
+  left:-4.8rem;
+  z-index:10;
+  width:4.8rem;
+  height:100%;
+  overflow-y: scroll;
+  background:rgba(66,67,85,1);
+
+  transition:all .2s ease-in;
+  &.active{
+    left:0;
+  }
+
+  &-nav{
+    display:block;
+
+
+    font-size:.3rem;
+    color:#fff;
+
+    &:active{
+      background: lighten(rgb(66,67,85),10%);
+    }
+
+    &-span{
+      display:flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      margin:0 .4rem;
+      box-sizing: border-box;
+      height:1rem;
+      border-bottom:0.01rem solid rgba(255,255,255,.2);
+    }
+    &:active &-span{
+      font-weight: bold;
+      border-bottom:none;
+    }
+  }
+}
+
+
+
+/*底部信息*/
+footer {
+  box-sizing: border-box;
+  width: 7.5rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  padding-left: .24rem;
+
+  font-size: .2rem;
+  color: rgba(255,255,255,.8);
+  background: rgba(66, 67, 85, 1);
+
+  .line {
+    margin: .3rem 0;
+    width: 7.02rem;
+    height: 0.01rem;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0.2;
+  }
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  line-height: 1;
+
+  height: .7rem;
+
+  &-one {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &-two {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nav {
+    padding-left: .2rem;
+    padding-right: .2rem;
+    border-right: 1px solid #fff;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border-right: 0;
+    }
+  }
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 7rem;
+  height: 2.75rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+.footer-wechat{
+  display:flex;
+  align-items: center;
+  &-img{
+    width:.48rem;
+    height:.48rem;
+  }
+}

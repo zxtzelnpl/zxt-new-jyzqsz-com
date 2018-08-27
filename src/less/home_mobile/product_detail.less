@@ -1,0 +1,45 @@
+@import './common/const';
+
+.container {
+  margin: 0 auto;
+  padding-bottom: .4rem;
+  width: 7.5rem;
+  background: rgba(240, 243, 245, 1);
+}
+
+.product-head{
+  padding:.4rem .24rem;
+  background: #ffffff;
+  &-img{
+    display:block;
+    margin:0 auto;
+    width:7.02rem;
+    height:3.95rem;
+  }
+  &-title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:1rem;
+    &-left{
+      font-weight: bold;
+      font-size: @fontSize1;
+    }
+    &-right{
+      color:#F64A67;
+      font-size: @fontSize2;
+    }
+  }
+  &-text{
+    color:#666666;
+  }
+}
+
+.product-content{
+  margin-top: .2rem;
+  img{
+    display: block;
+    width:100%;
+    height: auto;
+  }
+}

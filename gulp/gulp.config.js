@@ -7,17 +7,17 @@ function makeUrl(dir){
   return {
     javascript:{
       from:`${src}/javascript/${dir}/*.js`,
-      watch:`${src}/javascript/${dir}/**.js`,
+      watch:`${src}/javascript/${dir}/**/*.js`,
       to:`${dist}/${dir}/javascript`,
     },
     style:{
       from:`${src}/less/${dir}/*.less`,
-      watch:[`${src}/less/const.less`,`${src}/less/${dir}/**.less`],
+      watch:[`${src}/less/const.less`,`${src}/less/${dir}/**/*.less`],
       to:`${dist}/${dir}/css`,
     },
     html:{
       from:`${src}/template/${dir}/*.html`,
-      watch:`${src}/template/${dir}/**.html`,
+      watch:`${src}/template/${dir}/**/*.html`,
       to:`${dist}/${dir}/html`,
     }
   }

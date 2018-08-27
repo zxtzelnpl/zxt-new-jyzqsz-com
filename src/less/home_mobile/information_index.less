@@ -1,0 +1,246 @@
+@import './common/const';
+
+.container {
+  margin: 0 auto;
+  padding-bottom: .4rem;
+  width: 7.5rem;
+  background: rgba(240, 243, 245, 1);
+}
+
+.information-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.information-head {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  padding: 0 .65rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1rem;
+  background: #ffffff;
+
+  .information-head-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    font-size: @fontSize2;
+    color: #999999;
+    &.active {
+      color: @primaryColor;
+      font-weight: bold;
+      border-bottom-color: @primaryColor;
+    }
+  }
+}
+
+.information-contents {
+  margin-top: .2rem;
+  background: #ffffff;
+  .swiper-slide {
+    padding: 0 .24rem;
+    box-sizing: border-box;
+  }
+  .swiper-slide:nth-child(1) {
+    .content-title-text {
+      background: url("@{imgUrl}/icon_jyxz_txgd.png") left center no-repeat;
+      background-size: .4rem .4rem;
+    }
+  }
+  .swiper-slide:nth-child(2) {
+    .content-title-text {
+      background: url("@{imgUrl}/icon_jyxz_zxdt.png") left center no-repeat;
+      background-size: .4rem .4rem;
+    }
+  }
+  .swiper-slide:nth-child(3) {
+    .content-title-text {
+      background: url("@{imgUrl}/icon_jyxz_jrtt.png") left center no-repeat;
+      background-size: .4rem .4rem;
+    }
+  }
+
+  /*资讯动态-标题*/
+  .content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    &-text {
+      padding-left: .48rem;
+      font-size: @fontSize2;
+    }
+    &-more {
+      color: #999999;
+    }
+  }
+
+  /*资讯动态-主体*/
+  .content-main{
+    display:block;
+    margin:.4rem 0;
+    /*标题*/
+    &-title{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      &-date{
+        display:flex;
+        align-items: stretch;
+        width:1.12rem;
+        .allHeight(@fontSize1);
+        &-month{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width:50%;
+          border:1px solid @primaryColor;
+          color:#fff;
+          background: @primaryColor;
+        }
+        &-day{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          width:50%;
+          border:1px solid @primaryColor;
+          color:@primaryColor;
+          background: #ffffff;
+        }
+      }
+      &-text{
+        width:5.4rem;
+        .no-wrap();
+        font-size: @fontSize2;
+        font-weight: bold;
+      }
+    }
+
+    &-text{
+      margin-top: .24rem;
+      color:#999999;
+      .line-clamp();
+    }
+  }
+
+  /*资讯动态-列表信息*/
+  .content-ul{
+    &-li{
+      &-link{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        height:1rem;
+        border-top:1px solid #e5e5e5;
+      }
+      &-time{
+        color:#999999;
+      }
+      &-text{
+        width:5.4rem;
+        font-size: @fontSize2;
+        .no-wrap();
+        color:#333333;
+      }
+    }
+  }
+}
+
+/*策略纪要*/
+.strategic-summary{
+  margin-top: .2rem;
+  padding:0 .24rem;
+  background: #ffffff;
+  &-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:1rem;
+    &-text{
+      font-size: @fontSize2;
+    }
+    &-more{
+      color:#999999;
+    }
+  }
+
+  &-content{
+    &-ul{
+      &-li{
+        &-link{
+          display:flex;
+          align-items: center;
+
+          padding: .4rem 0;
+          border-top:1px solid #e5e5e5;
+        }
+        .li-img{
+          width:2.4rem;
+          height: 1.5rem;
+        }
+        .li-info{
+          display:flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          margin-left: .24rem;
+          width:4.2rem;
+          height: 1.5rem;
+
+          &-title{
+            .line-clamp();
+            color:#333333;
+            font-size: @fontSize2;
+          }
+          &-time{
+            color:#999999;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*主体博弈*/
+.game{
+  margin-top: .2rem;
+  padding:0 .24rem;
+  background: #ffffff;
+  &-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:1rem;
+    &-text{
+      font-size: @fontSize2;
+    }
+    &-more{
+      color:#999999;
+    }
+  }
+  &-content{
+    border-top: 1px solid #e5e5e5;
+    overflow: hidden;
+    &-link{
+      display: block;
+      margin: .4rem 0;
+      &-img{
+        display: block;
+        width:100%;
+        height: auto;
+      }
+    }
+  }
+}

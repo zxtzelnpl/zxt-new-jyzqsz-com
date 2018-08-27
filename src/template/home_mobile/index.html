@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    @@include('common/head.html',{
+    "psd":"750",
+    "px":"100"
+    })
+    <title>首页</title>
+    <link rel="stylesheet" href="/assets/home_new/public/swiper.min.css">
+    <link rel="stylesheet" href="/assets/home_mobile/css/index.css">
+</head>
+<body>
+@@include('common/header.html')
+
+<!--民众声明-弹出框-->
+<div class="statement-pop" id="statement">
+    <div class="statement-box">
+        <div class="statement-summary">
+            <div class="statement-summary-title">
+                民众证券投资咨询顾问有限公司声明
+            </div>
+            <p class="double-line"></p>
+            <div class="statement-summary-content" id="statementWrapper">
+                <div class="statement-summary-content-wrapper">
+                    <p>
+                        近期，我公司发现某些不法个人冒充公司营销人员向投资者收取高额的费用，甚至以保证投资收益回报等方式吸引投资者从事证券投资或其他金融相关业务，以骗取服务费或投资理财款，严重侵害了投资者及我公司的合法利益，对我公司声誉造成恶劣影响。</p>
+                    <h4 class="red">对此公司郑重声明：</h4>
+                    <p>1、我公司从事的业务范围仅限于证券投资咨询服务，未开展期货、外汇、原油、贵金属等投资业务。如投资者收到假借我公司名义推广上述业务的电话、微信等，请投资者保持警惕、谨防上当受骗。</p>
+                    <p>2、我公司对外统一使用公司财户收取服务费用，且严禁营销人员以私人账户收款，如有疑问可拨打总部电话0755-82560701、0755-82782361进行核实。</p>
+                    <p>3、郑重警告正在冒用我公司名义进行销售及其他活动的任何个人或组织，立即停止此类非法行为。对于损害我公司合法权益的行为，我公司保留追究诉诸法律的权利。</p>
+                    <p>4、任何冒用我公司名义引起的一切行为后果与我公司无关，敬请区分。</p>
+                    <p>请各位投资者提高警惕，谨防上当受骗，切实维护好自身权益。</p>
+                    <p>特此声明！</p>
+                    <p class="text-right">
+                        民众证券投资咨询顾问有限公司
+                    </p>
+                    <p class="text-right">
+                        2018-04-16
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="/assets/home_mobile/image/icon_sm_pic.png" class="statement-foot">
+        <img class="statement-close" src="/assets/home_mobile/image/common_icon_off.png" alt=""
+             data-action="hideStatement">
+    </div>
+</div>
+
+<div class="container">
+
+    <!--轮播-->
+    <div class="swiper-container banner" id="banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="banner-img" src="/assets/home_mobile/image/pic_home_banner.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="banner-img" src="/assets/home_mobile/image/pic_home_banner.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="banner-img" src="/assets/home_mobile/image/pic_home_banner.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!--产品中心-->
+    <div class="product">
+        <div class="title">
+            产品中心
+            <a href="#" class="more">更多></a>
+        </div>
+
+        <div class="product-content content">
+            <a href="#" class="product-box">
+                <img class="product-box-img" src="/assets/home_mobile/image/icon_home_dxb.png"/>
+                <div class="product-box-title">
+                    短线宝
+                </div>
+                <div class="product-box-line"></div>
+                <div class="product-box-text">
+                    以事件驱动型投资策略
+                    为主打造的一款短线博
+                    弈类产品，聚焦市场主
+                    流热点，捕捉具备爆发
+                    力的标的股
+                </div>
+            </a>
+
+            <a href="#" class="product-box">
+                <img class="product-box-img" src="/assets/home_mobile/image/icon_home_cp.png"/>
+                <div class="product-box-title">
+                    民众操盘
+                </div>
+                <div class="product-box-line"></div>
+                <div class="product-box-text">
+                    以波段主升型投资策略
+                    为主打造的一款波段交
+                    易类产品，挖掘主力资
+                    金动向，捕捉具备波段
+                    持股的标的股
+                </div>
+            </a>
+
+            <a href="#" class="product-box">
+                <img class="product-box-img" src="/assets/home_mobile/image/icon_home_dxb.png"/>
+                <div class="product-box-title">
+                    民众研究
+                </div>
+                <div class="product-box-line"></div>
+                <div class="product-box-text">
+                    以产业政策驱动型投资
+                    策略为主打造的一款长
+                    线价投类产品，聚焦上
+                    市公司内在价值，捕捉
+                    具备价值投资的标的股
+                </div>
+            </a>
+
+            <a href="#" class="product-box">
+                <img class="product-box-img" src="/assets/home_mobile/image/icon_home_dxb.png"/>
+                <div class="product-box-title">
+                    私人管家
+                </div>
+                <div class="product-box-line"></div>
+                <div class="product-box-text">
+                    为高净值客户群体专门
+                    打造的一款专属产品，
+                    以量化策略驱动为基础，
+                    布局战略性高成长品种
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--民众头条-->
+    <div class="top-news">
+        <div class="title">
+            民众头条
+            <a href="#" class="more">更多></a>
+        </div>
+
+        <div class="top-news-content content">
+            <!--100%宽度-1个-->
+            <a href="#" class="top-news-big-box">
+                <img src="/assets/home_mobile/test/民众头条_1.png" class="box-img"/>
+                <div class="box-title">
+                    如何理解我国证券投资基金的投资行为？
+                </div>
+            </a>
+
+            <!--50%宽度-2个-->
+            <div class="top-news-small-wrap">
+                <a href="#" class="top-news-small-box">
+                    <img src="/assets/home_mobile/test/民众头条_2.png" class="box-img"/>
+                    <div class="box-title">
+                        什么是投资足额分析法和行为金融分析法
+                    </div>
+                </a>
+                <a href="#" class="top-news-small-box">
+                    <img src="/assets/home_mobile/test/民众头条_2.png" class="box-img"/>
+                    <div class="box-title">
+                        什么是投资足额分析法和行为金融分析法什么是投资足额分析法和行为金融分析法
+                    </div>
+                </a>
+            </div>
+
+            <!--标题列表-3个-->
+            <div class="top-news-lines">
+                <a href="#" class="top-news-lines-one">什么是投资足额分析法和行为金融分析法</a>
+                <a href="#" class="top-news-lines-one">对投资顾问能力素质分析研究</a>
+                <a href="#" class="top-news-lines-one">如何解析投资顾问的业务和发展现状</a>
+            </div>
+        </div>
+    </div>
+
+    <!--民众内参-投资观点-->
+    <div class="investment-view">
+        <div class="title">
+            民众内参
+            <a href="#" class="more">更多></a>
+        </div>
+        <div class="investment-view-content content">
+            <a href="#" class="investment-view-box">
+                <img src="/assets/home_mobile/test/民众内参.png" class="box-img"/>
+                <div class="box-info">
+                    <div class="box-title">邵军杰：严格控制仓位，回调时潜
+                        伏布局优质板块邵军杰：严格控制仓位，回调时潜
+                        伏布局优质板块邵军杰：严格控制仓位，回调时潜
+                        伏布局优质板块
+                    </div>
+                    <span class="box-time">2018-03-26</span>
+                </div>
+            </a>
+            <a href="#" class="investment-view-box">
+                <img src="/assets/home_mobile/test/民众内参.png" class="box-img"/>
+                <div class="box-info">
+                    <div class="box-title">邵军杰：严格控制仓位，回调时潜
+                        伏布局优质板块
+                    </div>
+                    <span class="box-time">2018-03-26</span>
+                </div>
+            </a>
+            <a href="#" class="investment-view-box">
+                <img src="/assets/home_mobile/test/民众内参.png" class="box-img"/>
+                <div class="box-info">
+                    <div class="box-title">邵军杰：严格控制仓位，回调时潜
+                        伏布局优质板块
+                    </div>
+                    <span class="box-time">2018-03-26</span>
+                </div>
+            </a>
+            <a href="#" class="investment-view-box">
+                <img src="/assets/home_mobile/test/民众内参.png" class="box-img"/>
+                <div class="box-info">
+                    <div class="box-title">邵军杰：严格控制仓位，回调时潜
+                        伏布局优质板块
+                    </div>
+                    <span class="box-time">2018-03-26</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--投顾风采-->
+    <div class="teacher">
+        <div class="title">投顾风采</div>
+        <div class="teacher-content content">
+            <div class="teacher-main">
+                <div class="teacher-main-info">
+                    <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636222_主页_照片邵军杰.png"
+                         class="teacher-main-img"/>
+                    <div class="teacher-main-name">田雨橙</div>
+                    <div class="teacher-main-line">/</div>
+                    <div class="teacher-main-number">A0770617010020</div>
+                </div>
+                <img class="teacher-main-bg" src="/assets/home_mobile/image/icon_home_pic_bg.png"/>
+            </div>
+            <div id="teacherSwiper" class="teacher-swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="teacher-btn"
+                                 data-img="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                 data-number="A0770617010020"
+                            >
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn"
+                                 data-img="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                 data-number="A0770617010021"
+                            >
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn"
+                                 data-img="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                 data-number="A0770617010022"
+                            >
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn"
+                                 data-img="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                 data-number="A0770617010023"
+                            >
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn"
+                                 data-img="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                 data-number="A0770617010024"
+                            >
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn"
+                                 data-img="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                 data-number="A0770617010025"
+                            >
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                            <div class="teacher-btn">
+                                <img src="http://zhangwenjun.jyzqsz.com/upload/team_member/1533636211_主页_照片吴伟伟.png"
+                                     class="teacher-btn-img"/>
+                                <span class="teacher-btn-name">田雨橙</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--民众财经-->
+    <div class="finance">
+        <div class="title">
+            民众财经
+            <a href="#" class="more">更多></a>
+        </div>
+        <div class="finance-content content">
+            <a href="#" class="finance-box">
+                <img src="/assets/home_mobile/test/民众财经.png" class="box-img"/>
+                <span class="box-title">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+            </a>
+            <a href="#" class="finance-box">
+                <img src="/assets/home_mobile/test/民众财经.png" class="box-img"/>
+                <span class="box-title">市场继续强势反弹市场继续强势反弹市</span>
+            </a>
+            <a href="#" class="finance-box">
+                <img src="/assets/home_mobile/test/民众财经.png" class="box-img"/>
+                <span class="box-title">市场继续强势反弹市场继续强势反弹市</span>
+            </a>
+            <a href="#" class="finance-box">
+                <img src="/assets/home_mobile/test/民众财经.png" class="box-img"/>
+                <span class="box-title">市场继续强势反弹</span>
+            </a>
+        </div>
+    </div>
+
+    <!--合作伙伴-->
+    <div class="cooperation">
+        <div class="title">
+            合作伙伴
+        </div>
+
+        <div class="cooperation-content content">
+            <img src="/assets/home_mobile/image/common_pic_ac.png" alt="" class="cooperation-img">
+            <img src="/assets/home_mobile/image/common_pic_tx.png" alt="" class="cooperation-img">
+            <img src="/assets/home_mobile/image/common_pic_kcj.png" alt="" class="cooperation-img">
+            <img src="/assets/home_mobile/image/common_pic_ztb.png" alt="" class="cooperation-img">
+        </div>
+    </div>
+</div>
+@@include('common/footer.html')
+</body>
+@@include('common/foot.html')
+<script src="/assets/home_mobile/javascript/jroll.2.6.5.min.js"></script>
+<script src="/assets/home_new/public/swiper.min.js"></script>
+<script>
+  var POP_STATEMENT; //弹出框
+  var SWIPER_BANNER; //幻灯片
+  var SWIPER_TEACHER; //老师幻灯片
+  /*StatementPop插件*/
+  function Pop(obj) {
+    chalk('Pop,constructor')
+    this.button = obj.button;
+    this.dom = obj.dom;
+    this.activeClass = obj.activeClass;
+
+    this.close = this.close.bind(this);
+    this.bind();
+    this.JRoll = new JRoll('#statementWrapper');
+  }
+
+  Pop.prototype = {
+    close: function () {
+      this.dom.removeClass(this.activeClass);
+      this.dom.off('touchstart', this.forbiddenOutScroll);
+
+      /*内存-防止不必要的内存泄漏*/
+      this.button = null;
+      this.dom = null;
+      this.activeClass = null;
+      this.JRoll.destroy();
+      this.JRoll = null;
+      this.close = null;
+    },
+    /*need to change after this*/
+    forbiddenOutScroll: function (e) {
+      e.preventDefault();
+    },
+    bind: function () {
+      this.button.on('click', this.close);
+      this.dom.on('touchmove', this.forbiddenOutScroll);
+    }
+  }
+
+  function init() {
+    POP_STATEMENT = new Pop({
+      button: $("[data-action='hideStatement']"),
+      dom: $('#statement'),
+      activeClass: 'active'
+    });
+
+    SWIPER_BANNER = new Swiper('#banner', {
+      pagination: {
+        el: '#banner .swiper-pagination',
+      },
+    });
+
+    SWIPER_TEACHER = new Swiper('#teacherSwiper>.swiper-container', {
+      pagination: {
+        el: '#teacherSwiper .swiper-pagination',
+      },
+    })
+
+    var $teacherBtns = $('.teacher-btn');
+    var $teacherMain = $('.teacher-main');
+    $teacherBtns.click(function () {
+      var $this = $(this);
+      var className = 'turn';
+      if ($this.hasClass(className)) {
+        $this.removeClass(className)
+      }
+      else {
+        $teacherBtns.removeClass(className);
+        $this.addClass(className);
+
+        var name = $this.find('.teacher-btn-name').html();
+        var number = $this.data('number');
+        var src = $this.data('src');
+
+        $teacherMain.find('.teacher-main-img').attr('src',src);
+        $teacherMain.find('.teacher-main-number').html(number);
+        $teacherMain.find('.teacher-main-name').html(name);
+      }
+    })
+
+  }
+
+  $(function () {
+    init();
+
+
+  })
+</script>
+

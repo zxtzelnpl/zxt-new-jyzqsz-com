@@ -67,6 +67,7 @@ function dev() {
   gulp.task('mobile-html:dev',()=>{
     /** @namespace mobile.html */
     return gulp.src(mobile.html.from)
+      .pipe(plumber())
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
@@ -92,7 +93,7 @@ function dev() {
    */
   gulp.task('mobile-serve', ['mobile-html:dev','mobile-style:dev'], () => {
     browserSync
-      .watch(['assets/home_mobile/images/*.*','assets/home_mobile/js/*.js'])
+      .watch(['assets/home_mobile/images/*.*','assets/home_mobile/javascript/*.js'])
       .on('change',browserSync.reload);
 
     browserSync.init({
