@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "swiper": "^4.3.3"
+    "swiper": "^4.3.3",
+    "photoswipe": "^4.1.2"
   }
 }

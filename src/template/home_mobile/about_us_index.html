@@ -8,6 +8,8 @@
     })
     <title><?php echo $tdk['seo_t']; ?></title>
     <link rel="stylesheet" href="/assets/home_mobile/css/about_us_index.css">
+    <link rel="stylesheet" href="/assets/home_mobile/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="/assets/home_mobile/photoswipe/dist/default-skin/default-skin.css">
 </head>
 <body>
 @@include('common/header.html')
@@ -28,10 +30,10 @@
             为企业理念努力不懈地为广大投资者提供，个性化、精细化的投资顾问服务，深受广大投资者的青睐。
         </div>
         <div class="imgs">
-            <img class="img-1" src="/assets/home_new/images/aboutus/common_au_pic_1.png" />
-            <img class="img-2" src="/assets/home_new/images/aboutus/common_au_pic_2.png" />
-            <img class="img-3" src="/assets/home_new/images/aboutus/common_au_pic_3.png" />
-            <img class="img-4" src="/assets/home_new/images/aboutus/common_au_pic_4.png" />
+            <img class="img-1" src="/assets/home_new/images/aboutus/common_au_pic_1.png"/>
+            <img class="img-2" src="/assets/home_new/images/aboutus/common_au_pic_2.png"/>
+            <img class="img-3" src="/assets/home_new/images/aboutus/common_au_pic_3.png"/>
+            <img class="img-4" src="/assets/home_new/images/aboutus/common_au_pic_4.png"/>
         </div>
     </div>
 
@@ -148,12 +150,12 @@
         <div class="title">专业团队</div>
         <div class="double-line"></div>
         <div class="four-content">
-            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_zy.png" />
-            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_gx.png" />
-            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_qw.png" />
-            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_tx.png" />
-            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_gjd.png" />
-            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_sty.png" />
+            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_zy.png"/>
+            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_gx.png"/>
+            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_qw.png"/>
+            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_tx.png"/>
+            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_gjd.png"/>
+            <img class="four-content-img" src="/assets/home_mobile/image/common_au_team_sty.png"/>
         </div>
     </div>
 
@@ -162,30 +164,174 @@
         <div class="double-line"></div>
         <div class="five-content">
 
-            <div class="five-content-box">
+            <div class="five-content-box" data-action="pswp" data-index="0">
                 <div class="five-content-box-img"></div>
                 <span class="five-content-box-span">网站备案信息</span>
             </div>
 
             <div class="five-content-wrap">
-                <div class="five-content-box-small">
+                <div class="five-content-box-small" data-action="pswp" data-index="1">
                     <div class="five-content-box-small-img yxxkz"></div>
                     <span class="five-content-box-small-span">营业许可证</span>
                 </div>
-                <div class="five-content-box-small">
+                <div class="five-content-box-small" data-action="pswp" data-index="2">
                     <div class="five-content-box-small-img xywzrz"></div>
                     <span class="five-content-box-small-span">信用网站认证</span>
                 </div>
-                <div class="five-content-box-small">
+                <div class="five-content-box-small" data-action="pswp" data-index="3">
                     <div class="five-content-box-small-img yyzz"></div>
                     <span class="five-content-box-small-span">营业执照</span>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="six">
+        <div class="title">关于我们</div>
+        <div class="double-line"></div>
+        <div class="six-content">
+            <div class="pay-attention">
+                <div class="pay-attention-title">
+                    关注我们
+                </div>
+                <div class="pay-attention-box">
+                    <img src="" class="qrcode">
+                </div>
+            </div>
+
+            <div class="six-title">深圳民众证券投资咨询顾问有限公司</div>
+            <div class="six-short-line"></div>
+            <div class="six-text">ICP备案：粤ICP备15035969号</div>
+            <div class="six-text">版权所有：深圳民众证券投资咨询顾问有限公司</div>
+            <div class="six-text">公司地址：广东省深圳市福田区沙头街道下沙京</div>
+            <div class="six-text">基滨河时代广场A座41楼05室</div>
+        </div>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </div>
 </body>
 @@include('common/foot.html')
+<script src="/assets/home_mobile/photoswipe/dist/photoswipe.min.js"></script>
+<script src="/assets/home_mobile/photoswipe/dist/photoswipe-ui-default.min.js"></script>
 <script>
+  var pswpElement = document.querySelectorAll('.pswp')[0];
+
+  // build items array
+  var items = [
+    {
+      src: '/assets/home_new/images/aboutus/usfour-big4.jpg',
+      w: 1890,
+      h: 512,
+      title:'网站备案信息'
+    },
+    {
+      src: '/assets/home_new/images/aboutus/usfour-big1.jpg',
+      w: 800,
+      h: 565,
+      title:'营业许可证'
+    },
+    {
+      src: '/assets/home_new/images/aboutus/usfour-big2.jpg',
+      w: 1154,
+      h: 923,
+      title:'信用网站认证'
+    },
+    {
+      src: '/assets/home_new/images/aboutus/usfour-big3.jpg',
+      w: 905,
+      h: 1280,
+      title:'营业执照'
+    }
+  ];
+
+  // define options (if needed)
+  var options = {
+    // optionName: 'option value'
+    // for example:
+    index: 0 // start at first slide
+  };
+
+  // Initializes and opens PhotoSwipe
+
+
+
+  $('[data-action="pswp"]').on('click',function(){
+    var index = $(this).data('index');
+    var options = {
+      // optionName: 'option value'
+      // for example:
+      fullscreenEl:false,
+      shareEl:false,
+      index: index // start at first slide
+    };
+    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+  })
 
 </script>
