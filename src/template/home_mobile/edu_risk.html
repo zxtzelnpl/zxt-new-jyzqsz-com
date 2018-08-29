@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    @@include('common/head.html',{
+    "psd":"750",
+    "px":"100"
+    })
+    <title>如何理解我国证券投资基金的投资行为</title>
+    <link rel="stylesheet" href="/assets/home_mobile/css/edu_risk.css">
+</head>
+<body>
+@@include('common/header.html')
+
+<div class="container">
+    <div class="edu_risk">
+        <nav>
+            <div class="show">
+                <div class="show-text">
+                    打击非法证券活动
+                </div>
+            </div>
+            <div class="ul">
+                <a href="#" class="li select">打击非法证券活动</a>
+                <a href="#" class="li">风险揭示书公示</a>
+                <a href="#" class="li">警惕互联网非法荐股</a>
+            </div>
+        </nav>
+
+        <div class="cover">
+
+        </div>
+    </div>
+
+
+</div>
+
+@@include('common/footer.html')
+</body>
+@@include('common/foot.html')
+<script>
+  $(function(){
+    $('.show-text').click(function(){
+      $('.ul').toggleClass('active');
+      $('.cover').toggle();
+    })
+  })
+</script>
