@@ -1,0 +1,60 @@
+@import './common/const';
+
+.container {
+  padding-bottom: .4rem;
+  overflow: hidden;
+  background: rgba(240, 243, 245, 1);
+  color:#333333;
+
+  &-head {
+    margin-top: .2rem;
+    padding: 0 .24rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: @fontSize2;
+    font-weight: bold;
+    background: #ffffff;
+    &:after{
+      content: "";
+      display:block;
+      width: 100%;
+      height: 1px;
+      background: #e5e5e5;
+
+      transform: translateY(-1px);
+    }
+  }
+  &-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 .24rem .4rem;
+    background: #ffffff;
+  }
+  &-li{
+    margin-top: .4rem;
+  }
+}
+
+.li {
+  &-img {
+    display: block;
+    width: 3.4rem;
+    height: 1.9rem;
+  }
+  &-text{
+    display: block;
+    width: 3.4rem;
+    font-size: @fontSize2;;
+    .line-clamp();
+  }
+}
+
+.load-more {
+  height: 1rem;
+  border-top: 1px solid #E5E5E5;
+  line-height: 1rem;
+  text-align: center;
+  background: #ffffff;
+}

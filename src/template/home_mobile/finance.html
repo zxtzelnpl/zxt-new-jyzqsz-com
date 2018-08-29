@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    @@include('common/head.html',{
+    "psd":"750",
+    "px":"100"
+    })
+    <title>民众财经</title>
+    <link rel="stylesheet" href="/assets/home_mobile/css/finance.css">
+</head>
+<body>
+@@include('common/header.html')
+
+<div class="container">
+    <div class="container-head">民众财经</div>
+    <div class="container-ul">
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+        <a href="#" class="container-li">
+            <img class="li-img" src="/assets/home_mobile/test/民众头条_1.png" alt="">
+            <span class="li-text">市场继续强势反弹市场继续强势反弹市场继续强势反弹市场继续强势反弹</span>
+        </a>
+    </div>
+    <div class="load-more">
+        查看更多
+    </div>
+</div>
+
+@@include('common/footer.html')
+</body>
+@@include('common/foot.html')
+<script>
+  var loadMore = $('.load-more');
+  var ul = $('.container-ul');
+
+  /*test*/
+  var testStr = ul.html();
+
+  loadMore.on('click', function () {
+    loadMore.html('加载中。。。。');
+
+    $.ajax('/assets/home_mobile/test/test.json', {
+      success: function () {
+        ul.append(
+          testStr
+        )
+        loadMore.html('查看更多');
+      },
+      error: function () {
+        loadMore.html('网络错误');
+        setTimeout(function () {
+          loadMore.html('点击重试')
+        }, 1000)
+      }
+    })
+  })
+</script>

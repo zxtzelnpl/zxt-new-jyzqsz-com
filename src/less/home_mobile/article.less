@@ -1,0 +1,65 @@
+@import './common/const';
+
+.container {
+  padding-bottom: .4rem;
+  overflow: hidden;
+  background: rgba(240, 243, 245, 1);
+  color:#333333;
+}
+
+.article{
+  padding: 0 .24rem;
+  background: #ffffff;
+  &-head{
+    padding: .4rem 0;
+    &-title{
+      font-size: @fontSize1;
+    }
+    &-time{
+      margin-top: .2rem;
+      color:#999999;
+    }
+    &-sub{
+      margin-top: .4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      color:#999999;
+
+      .line{
+        color:#e5e5e5;
+      }
+    }
+  }
+
+  &-content{
+    padding:.4rem 0 .6rem;
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+    font-size: @fontSize2;
+
+    p{
+      margin:10px 0;
+      text-indent: 2em;
+      text-align: justify;
+    }
+  }
+}
+
+nav{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 1.8rem;
+  box-sizing: border-box;
+  padding: .4rem .24rem;
+
+  background: #ffffff;
+  .link{
+    &:active{
+      background: #e6e6e6;
+    }
+  }
+}

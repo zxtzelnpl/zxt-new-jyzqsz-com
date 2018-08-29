@@ -1,0 +1,49 @@
+@import './common/const';
+
+.container {
+  padding-bottom: .4rem;
+  overflow: hidden;
+  background: rgba(240, 243, 245, 1);
+
+  &-head {
+    margin-top: .2rem;
+    padding: 0 .24rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: @fontSize2;
+    font-weight: bold;
+    background: #ffffff;
+  }
+  &-ul {
+    padding: 0 .24rem;
+    background: #ffffff;
+  }
+  &-li {
+    display: block;
+    padding: .4rem 0 0 0;
+
+    &:first-child{
+      border-top: 1px solid #E5E5E5;
+    }
+
+    &:active {
+      background: #E6E6E6;
+    }
+  }
+}
+
+.li {
+  &-img {
+    display: block;
+    width: 100%;
+    height:auto;
+  }
+}
+
+.load-more {
+  height: 1rem;
+  border-top: 1px solid #E5E5E5;
+  line-height: 1rem;
+  text-align: center;
+  background: #ffffff;
+}
