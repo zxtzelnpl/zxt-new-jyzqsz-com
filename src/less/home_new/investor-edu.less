@@ -19,13 +19,16 @@
       text-align: center;
       font-size: 16px;
       .text-hover();
+      &.double-line{
+        line-height: 30px;
+      }
+
       &:hover,&.active{
         border-left-color:@primaryColor;
         font-weight: bold;
       }
       &:last-child{
         border-bottom:none;
-        line-height: 64px;
       }
     }
   }
@@ -192,6 +195,10 @@
     padding:40px 0;
     font-size:16px;
     color:#333333;
+  }
+  .content-sub{
+    display: flex;
+    justify-content: center;
   }
   .content-nav{
     display:flex;

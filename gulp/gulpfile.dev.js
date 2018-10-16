@@ -57,7 +57,7 @@ function dev() {
     })
 
     gulp.watch(pc.style.watch, ['pc-style:dev']);
-    gulp.watch(pc.html.watch, ['html:dev']);
+    gulp.watch(pc.html.watch, ['pc-html:dev']);
   })
 
 

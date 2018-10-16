@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>关于我们</title>
-    @@include('./common/head.html')
+    <link rel="shortcut icon" href=" /assets/home_new/bitbug_favicon.ico" />
+    <link rel="stylesheet" href="/assets/home_new/css/QGindex.css"/>
+    <link rel="stylesheet" href="/assets/home_new/css/footer.css"/>
+    <script src="/assets/home_new/public/jquery.js"></script>
     <link rel="stylesheet" href="/assets/home_new/public/swiper.min.css">
     <link rel="stylesheet" href="/assets/home_new/css/about-us.css">
 </head>
@@ -37,7 +40,8 @@
 
                     <!--头部LOGO行-->
                     <div class="header-bottom">
-                        <a class="header-logo" href="/"><img class="header-logo-img" src="/assets/home_new/images/logo.png" alt="民众投顾"></a>
+                        <a class="header-logo" href="/"><img class="header-logo-img"
+                                                             src="/assets/home_new/images/logo.png" alt="民众投顾"></a>
                         <div class="header-consultation">
                             <a class="header-consultation-online"
                                href="tencent://message/?uin=2238086832&Site=test315.nesky.cn&Menu=yes">
@@ -171,26 +175,30 @@
                 </h2>
                 <div class="content-body">
                     <div class="content-boxes">
-                        <a target="_blank" href="/assets/home_new/images/aboutus/usfour-big4.jpg" class="content-box usfour4">
+                        <a target="_blank" href="/assets/home_new/images/aboutus/usfour-big4.jpg"
+                           class="content-box usfour4">
                             <div class="img">
                                 <div class="img-cover"></div>
                             </div>
                             <span class="a">网站备案信息</span>
                         </a>
                         <div class="content-row">
-                            <a target="_blank" href="/assets/home_new/images/aboutus/usfour-big1.jpg" class="content-box usfour1">
+                            <a target="_blank" href="/assets/home_new/images/aboutus/usfour-big1.jpg"
+                               class="content-box usfour1">
                                 <div class="img">
                                     <div class="img-cover"></div>
                                 </div>
                                 <span class="a">营业许可证</span>
                             </a>
-                            <a target="_blank" href="/assets/home_new/images/aboutus/usfour-big2.jpg" class="content-box usfour2">
+                            <a target="_blank" href="/assets/home_new/images/aboutus/usfour-big2.jpg"
+                               class="content-box usfour2">
                                 <div class="img">
                                     <div class="img-cover"></div>
                                 </div>
                                 <span class="a">信用网站认证</span>
                             </a>
-                            <a target="_blank" href="/assets/home_new/images/aboutus/usfour-big3.jpg" class="content-box usfour3">
+                            <a target="_blank" href="/assets/home_new/images/aboutus/usfour-big3.jpg"
+                               class="content-box usfour3">
                                 <div class="img">
                                     <div class="img-cover"></div>
                                 </div>
@@ -213,12 +221,12 @@
                         <img class="content-box-qr" src="/assets/home_new/images/ewm.jpg"/>
                     </div>
                     <div class="content-text company-name">
-                        深圳民众证券投资咨询顾问有限公司
+                        民众证券投资咨询顾问有限公司
                     </div>
                     <div class="content-line"></div>
                     <div class="content-text">
                         <p>ICP备案：粤ICP备15035969号</p>
-                        <p>版权所有&copy;深圳民众证券投资咨询顾问有限公司</p>
+                        <p>版权所有&copy;民众证券投资咨询顾问有限公司</p>
                         <p>公司地址：广东省深圳市福田区沙头街道下沙京基滨河时代广场A座41楼05室</p>
                     </div>
                 </div>
@@ -266,9 +274,9 @@
 
 <!--侧边导航-->
 <div class="sider-toolbar">
-    <a class="sider-toolbar-box sider-toolbar-box-customer"
+    <!--<a class="sider-toolbar-box sider-toolbar-box-customer"
        href="tencent://message/?uin=2238086832&Site=test315.nesky.cn&Menu=yes">
-    </a>
+    </a>-->
     <div class="sider-toolbar-box sider-toolbar-box-statement" data-action="show-statement">
     </div>
     <div class="sider-toolbar-box sider-toolbar-box-scroll" data-action="scroll-to-top">
@@ -279,6 +287,9 @@
 <!--脚步需要独立引入-->
 <script src="/assets/home_new/public/swiper.min.js"></script>
 <script>
+
+    console.log(window)
+
   function statementShow() {
     console.log('statementShow');
     $('.statement').addClass('show');
@@ -290,22 +301,19 @@
   }
 
 
-
-
-
-  function resize(){
-    var $siderToolbar = $('.sider-toolbar');
-    var innerWidth = window.innerWidth;
-    var contentWidth = 1200;
-    var _space = (innerWidth - contentWidth)/2;
-    var space = _space>0?_space:0;
-    var left = contentWidth + space*2 - 20 - $siderToolbar[0].getBoundingClientRect().width;
-    $siderToolbar.css({
-      left:left
-    })
+  function resize() {
+    // var $siderToolbar = $('.sider-toolbar');
+    // var innerWidth = window.innerWidth;
+    // var contentWidth = 1200;
+    // var _space = (innerWidth - contentWidth) / 2;
+    // var space = _space > 0 ? _space : 0;
+    // var left = contentWidth + space * 2 - 20 - $siderToolbar[0].getBoundingClientRect().width;
+    // $siderToolbar.css({
+    //   left: left
+    // })
   }
 
-  $(function(){
+  $(function () {
 
     /*大屏滚动*/
     var mySwiper = new Swiper('.swiper-container', {
@@ -314,7 +322,7 @@
       mousewheel: true,
       pagination: {
         el: '.swiper-pagination',
-        clickable:true
+        clickable: true
       },
       on: {
         slideChange: function () {
@@ -327,7 +335,7 @@
             $('.sider-toolbar').addClass('show');
           }
         },
-        reachEnd:function(){
+        reachEnd: function () {
           $('.next').hide()
         }
       }
@@ -336,13 +344,14 @@
     /*侧边栏导航功能*/
     $('[data-action="show-statement"]').on('click', statementShow);
     $('[data-action="hide-statement"]').on('click', statementHide);
-    $('[data-action="scroll-to-top"]').on('click', function(){mySwiper.slideTo(0)});
-
+    $('[data-action="scroll-to-top"]').on('click', function () {
+      mySwiper.slideTo(0)
+    });
 
 
     resize();
 
-    $(window).on('resize',resize)
+    $(window).on('resize', resize)
   })
 
 

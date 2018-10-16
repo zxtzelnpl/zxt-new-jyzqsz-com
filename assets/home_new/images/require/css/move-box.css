@@ -1,0 +1,55 @@
+.move-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 280px;
+  height: 140px;
+  background: #fbfafa;
+}
+.move-box-head {
+  width: 100%;
+  height: 32px;
+  background: #cb3436;
+  overflow: hidden;
+}
+.move-box-head-close {
+  margin: 4px;
+  float: right;
+  cursor: pointer;
+}
+.move-box-content {
+  margin: 8px auto 0;
+  box-sizing: border-box;
+  width: 270px;
+  height: 60px;
+  border: 1px solid #ffffff;
+}
+.move-box-content-inner {
+  width: 268px;
+  height: 58px;
+  box-sizing: border-box;
+  border: 1px solid #e7e6e6;
+  line-height: 58px;
+  font-size: 18px;
+  text-align: center;
+}
+.move-box-warning {
+  position: absolute;
+  left: 16px;
+  top: 6px;
+}
+.move-box-link {
+  margin: 8px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 140px;
+  height: 30px;
+  background: #d14447;
+  color: #fff;
+  text-decoration: none;
+}
+.move-box-link:hover {
+  color: #fff;
+}

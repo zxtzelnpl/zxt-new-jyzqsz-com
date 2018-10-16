@@ -139,7 +139,7 @@
 }
 .strategic-summary{
   margin-top:60px;
-  width:790px;
+  width:100%;
   .li{
     display:flex;
     align-items: center;
@@ -153,6 +153,8 @@
       .img-hover();
     }
     &-info{
+      flex-grow:1;
+
       display:flex;
       flex-direction: column;
       justify-content: space-between;
@@ -160,7 +162,7 @@
       box-sizing: border-box;
       width:530px;
       height:160px;
-      padding:8px 0 8px 20px;
+      padding:8px 20px 8px 20px;
       &-title{
         line-height: 1;
         .in-title{

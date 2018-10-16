@@ -26,7 +26,7 @@
     <div class="page-information-banner"></div>
     <div class="page-information-boxes">
         <div class="page-information-box dynamics-info">
-            <h2 class="title">投资观点</h2>
+            <h2 class="title">投顾观点</h2>
             <span class="more"><a href="/information/tzgd.html">更多></a></span>
             <div class="lis">
                 <?php if(count($tzgd_list)): ?>
@@ -38,7 +38,7 @@
                             <div class="month"><?php echo date("m",strtotime($v['datetime'])); ?></div>
                             <div class="date"><?php echo date("d",strtotime($v['datetime'])); ?></div>
                         </div>
-                        <div class="head-title"><li><?php echo $v['title']; ?></li></div>
+                        <div class="head-title"><?php echo $v['title']; ?></div>
                     </div>
                     <div class="body">
                        <?php echo mb_substr(strip_tags($v['content']), 0,100); ?>
@@ -51,7 +51,7 @@
                 </a>
                 <?php endif; ?>
                 <?php endforeach; ?>
-                <?php endif ?> 
+                <?php endif ?>
             </div>
         </div>
         <div class="page-information-box investment-view">
@@ -128,10 +128,10 @@
                     </div>
                 </a>
             <?php endforeach; ?>
-            <?php endif; ?> 
+            <?php endif; ?>
             </div>
         </div>
-        <div class="page-information-box game">
+        <!-- <div class="page-information-box game">
             <h2 class="title">主题博弈</h2>
             <span class="more"><a href="/information/ztby.html">更多></a></span>
             <div class="lis">
@@ -141,9 +141,9 @@
                     <img class="li-img" src="<?php echo $v['pic_path']; ?>" alt="">
                 </a>
             <?php endforeach; ?>
-            <?php endif; ?>   
+            <?php endif; ?>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -158,6 +158,6 @@
 
 <script>
     eclipse('.li-top .body',64);
-    eclipse('.li-info-summary',56);
+    eclipse('.li-info-summary',120);
 </script>
 </html>

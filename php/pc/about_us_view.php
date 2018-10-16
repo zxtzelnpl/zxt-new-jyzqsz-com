@@ -183,7 +183,7 @@
 
 <!--侧边导航-->
 <div class="sider-toolbar">
-    <!--<a class="sider-toolbar-box sider-toolbar-box-customer" href="tencent://message/?uin=2238086832&Site=test315.nesky.cn&Menu=yes"></a>-->
+    <a class="sider-toolbar-box sider-toolbar-box-customer" href="tencent://message/?uin=2850873565&Site=test315.nesky.cn&Menu=yes"></a>
     <div class="sider-toolbar-box sider-toolbar-box-statement" data-action="show-statement"></div>
     <div class="sider-toolbar-box sider-toolbar-box-scroll" data-action="scroll-to-top"></div>
 </div>

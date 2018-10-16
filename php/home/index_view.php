@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/assets/home_new/public/swiper.min.css">
     <link rel="stylesheet" href="/assets/home_new/css/index.css">
+    <link rel="stylesheet" href="/assets/home_new/css/move-box.css">
     <style>.index-number-li .percent{margin-left: 12px;}</style>
 </head>
 <body>
@@ -72,153 +73,98 @@
     <div class="page-information">
         <div class="page-information-boxes">
             <div class="page-information-box dynamics-info">
-                <h2 class="page-information-box-title">资讯动态</h2>
-                <span class="more">更多></span>
+                <h2 class="page-information-box-title">投顾观点</h2>
+                <span class="more"><a href="/information/tzgd.html">更多></a></span>
                 <div class="lis">
-                    <a class="li-top">
+                <?php if(count($tzgd_list)): ?>
+                <?php foreach($tzgd_list as $key => $v): ?>
+                <?php if($key < 1): ?>
+                    <a class="li-top" href="/information/tzgd_detail/<?php echo $v['id']; ?>.html" target="_blank">
                         <div class="head">
                             <div class="head-date">
-                                <div class="month">04</div>
-                                <div class="date">25</div>
+                                <div class="month"><?php echo date("m",strtotime($v['datetime'])); ?></div>
+                                <div class="date"><?php echo date("d",strtotime($v['datetime'])); ?></div>
                             </div>
                             <div class="head-title">
-                                月线四连阴“魔咒”重现？ 未来两周是大盘方向抉择时段
+                                <?php echo $v['title']; ?>
                             </div>
                         </div>
                         <div class="body">
-                            “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
+                            <?php echo mb_substr(strip_tags($v['content']), 0,100); ?>
                         </div>
                     </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
+                <?php else: ?>
+                    <a class="li" href="/information/tzgd_detail/<?php echo $v['id']; ?>.html" target="_blank">
+                        <span class="li-date"><?php echo date("Y/m/d",strtotime($v['datetime'])); ?></span>
                         <span class="li-summary">
-                        “五一”小长假后，
-                    </span>
+                        <?php echo $v['title']; ?>
+                        </span>
                     </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
+                <?php endif; ?>
+                <?php endforeach; ?>
+                <?php endif ?>
                 </div>
             </div>
             <div class="page-information-box investment-view">
-                <h2 class="page-information-box-title">投资观点</h2>
-                <span class="more">更多></span>
+                <h2 class="page-information-box-title">资讯动态</h2>
+                <span class="more"><a href="/information/zxdt.html">更多></a></span>
                 <div class="lis">
-                    <a class="li-top">
+                <?php if(count($zxdt_list)): ?>
+                <?php foreach($zxdt_list as $key => $v): ?>
+                <?php if($key < 1): ?>
+                    <a class="li-top" href="/information/zxdt_detail/<?php echo $v['ID']; ?>.html" target="_blank">
                         <div class="head">
                             <div class="head-date">
-                                <div class="month">04</div>
-                                <div class="date">25</div>
+                                <div class="month"><?php echo date("m",strtotime($v['UEditTime'])); ?></div>
+                                <div class="date"><?php echo date("d",strtotime($v['UEditTime'])); ?></div>
                             </div>
                             <div class="head-title">
-                                月线四连阴“魔咒”重现？ 未来两周是大盘方向抉择时段
+                                <?php echo $v['Title']; ?>
                             </div>
                         </div>
                         <div class="body">
-                            “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
+                            <?php echo mb_substr(strip_tags($v['Content']), 0,100); ?>
                         </div>
                     </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
+                <?php else: ?>
+                    <a class="li" href="/information/zxdt_detail/<?php echo $v['ID']; ?>.html" target="_blank">
+                        <span class="li-date"><?php echo date("Y/m/d",strtotime($v['UEditTime'])); ?></span>
+                        <span class="li-summary"><?php echo $v['Title']; ?></span>
                     </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
+                <?php endif; ?>
+                <?php endforeach; ?>
+                <?php endif ?>
                 </div>
             </div>
             <div class="page-information-box top-news">
                 <h2 class="page-information-box-title">今日头条</h2>
-                <span class="more">更多></span>
+                <span class="more"><a href="/information/jrtt.html">更多></a></span>
                 <div class="lis">
-                    <a class="li-top">
+                <?php if(count($jrtt_list)): ?>
+                <?php foreach($jrtt_list as $key => $v): ?>
+                <?php if($key < 1): ?>
+                    <a class="li-top" href="/information/jrtt_detail/<?php echo $v['id']; ?>.html" target="_blank">
                         <div class="head">
                             <div class="head-date">
-                                <div class="month">04</div>
-                                <div class="date">25</div>
+                                <div class="month"><?php echo date("m",$v['timestamp']); ?></div>
+                                <div class="date"><?php echo date("d",$v['timestamp']); ?></div>
                             </div>
                             <div class="head-title">
-                                月线四连阴“魔咒”重现？ 未来两周是大盘方向抉择时段
+                                <?php echo $v['title']; ?>
                             </div>
                         </div>
                         <div class="body">
-                            “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
+                            <?php echo mb_substr(strip_tags($v['content']), 0,100); ?>
                         </div>
                     </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
+                <?php else: ?>
+                    <a class="li" href="/information/jrtt_detail/<?php echo $v['id']; ?>.html" target="_blank">
+                        <span class="li-date"><?php echo date("Y/m/d",$v['timestamp']); ?></span>
+                        <span class="li-summary"><?php echo $v['title']; ?></span>
                     </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
-                    <a class="li">
-                        <span class="li-date">2018/04/25</span>
-                        <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
-                    </a>
+                <?php endif; ?>
+                <?php endforeach; ?>
+                <?php endif ?>
                 </div>
             </div>
         </div>
@@ -261,7 +207,7 @@
 
 
 
-    <!--君银风采-->
+    <!--民众风采-->
     <div class="reference">
         <div class="wrap">
             <h2 class="title">民众内参</h2>
@@ -276,7 +222,6 @@
                     </div>
                 </a>
             <?php endforeach; ?>
-            </div>
         </div>
     </div>
 
@@ -287,36 +232,100 @@
             <h2 class="title">产品中心</h2>
             <a class="sub-title" href="/product/index.html">更多 ></a>
             <div class="product-boxes">
-            <?php foreach($product_list as $k => $v): ?>
-                <?php if($k < 2): ?>
-                <div class="product-box">
-                   <div class="product-box-info">
-                       <h2 class="product-box-info-title"><?php echo $v['name']; ?></h2>
-                       <p class="product-box-info-detail"><?php echo $v['description']; ?></p>
-                       <a href="/product/index.html" class="product-box-info-link">
-                           了解详情
-                       </a>
-                   </div>
-                   <div class="product-box-pic">
-                       <img class="product-box-pic-img" src="<?php echo $v['pic_path']; ?>" alt="<?php echo $v['name']; ?>">
-                   </div>
-                </div>
-                <?php else: ?>
-                <div class="product-box">
-                    <div class="product-box-pic">
-                        <img class="product-box-pic-img" src="<?php echo $v['pic_path']; ?>" alt="<?php echo $v['name']; ?>">
+                <div class="product-box product-box-product">
+                    <div class="product-box-title">
+                        智能量化股池
                     </div>
-                    <div class="product-box-info">
-                        <h2 class="product-box-info-title"><?php echo $v['name']; ?></h2>
-                        <p class="product-box-info-detail"><?php echo $v['description']; ?></p>
-                        <a href="/product/index.html" class="product-box-info-link">
-                            了解详情
+                    <div class="product-box-content">
+                    <?php foreach($product_list as $k => $v): ?>
+                        <a href="/product/index.html" class="product-box-content-li">
+                            <span class="product-box-content-title"><?php echo $v['name']; ?></span>
+                            <span class="product-box-content-sub"><?php echo $v['keywords']; ?></span>
                         </a>
+                    <?php endforeach; ?>
+                       <!--  <a href="/product/index.html" class="product-box-content-li">
+                           <span class="product-box-content-title">操盘先锋</span>
+                           <span class="product-box-content-sub">质优个股+操盘策略</span>
+                       </a>
+                       <a href="/product/index.html" class="product-box-content-li">
+                           <span class="product-box-content-title">策略调研</span>
+                           <span class="product-box-content-sub">高成长+低估值</span>
+                       </a>
+                       <a href="/product/index.html" class="product-box-content-li">
+                           <span class="product-box-content-title">私人订制</span>
+                           <span class="product-box-content-sub">私人专属 策略订制</span>
+                       </a> -->
                     </div>
                 </div>
-                <?php endif; ?>
-           <?php endforeach; ?>
-
+                <div class="product-box product-box-strategy">
+                    <div class="product-box-title">
+                        专家优选策略
+                    </div>
+                    <div class="product-box-content">
+                        <div class="product-box-content-li">
+                            <span class="product-box-content-title">人工优选标的</span>
+                        </div>
+                        <div class="product-box-content-li">
+                            <span class="product-box-content-title">科学仓位管理</span>
+                        </div>
+                        <div class="product-box-content-li">
+                            <span class="product-box-content-title">提示买卖点位</span>
+                        </div>
+                        <div class="product-box-content-li">
+                            <span class="product-box-content-title">止盈止损预警</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-box product-box-service">
+                    <div class="product-box-title">
+                        贴身管家服务
+                    </div>
+                    <div class="product-box-content">
+                        <div class="product-box-content-li">
+                            <span class="product-box-content-title">百名 专家顾问</span>
+                        </div>
+                        <div class="product-box-content-li">
+                            <span class="product-box-content-title">专属 投资助理</span>
+                        </div>
+                        <div class="product-box-content-li">
+                            <span class="product-box-content-title">全程 贴心服务</span>
+                        </div>
+                        <div class="product-box-content-li">
+                            <span class="product-box-content-title">0基础 系统教学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-boxes" style="display:none;">
+                <?php foreach($product_list as $k => $v): ?>
+                    <?php if($k < 2): ?>
+                    <div class="product-box">
+                       <div class="product-box-info">
+                           <h2 class="product-box-info-title"><?php echo $v['name']; ?></h2>
+                           <p class="product-box-info-detail"><?php echo $v['description']; ?></p>
+                           <a href="/product/index.html" class="product-box-info-link">
+                               了解详情
+                           </a>
+                       </div>
+                       <div class="product-box-pic">
+                           <img class="product-box-pic-img" src="<?php echo $v['pic_path']; ?>" alt="<?php echo $v['name']; ?>">
+                       </div>
+                    </div>
+                    <?php else: ?>
+                    <div class="product-box">
+                        <div class="product-box-pic">
+                            <img class="product-box-pic-img" src="<?php echo $v['pic_path']; ?>" alt="<?php echo $v['name']; ?>">
+                        </div>
+                        <div class="product-box-info">
+                            <h2 class="product-box-info-title"><?php echo $v['name']; ?></h2>
+                            <p class="product-box-info-detail"><?php echo $v['description']; ?></p>
+                            <a href="/product/index.html" class="product-box-info-link">
+                                了解详情
+                            </a>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+               <?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -413,6 +422,23 @@
 <script src="/assets/home_new/public/common.js"></script>
 <!--common-->
 
+<div class="move-box" data-action="move-box">
+    <div class="move-box-head">
+        <img class="move-box-head-close" src="/assets/home_new/images/warning_box/wrong.png" alt="">
+    </div>
+    <div class="move-box-content">
+        <div class="move-box-content-inner">
+            警惕互联网“非法荐股”风险
+        </div>
+    </div>
+
+    <a class="move-box-link" target="_blank" href="/Investor_edu/index/5.html">
+        <span>进入了解详细</span>
+        <img src="/assets/home_new/images/warning_box/shape.png" alt="">
+    </a>
+
+    <img class="move-box-warning" src="/assets/home_new/images/warning_box/warning.png" alt="">
+</div>
 
 </html>
 <script src="/assets/home_new/public/swiper.min.js"></script>
@@ -511,3 +537,4 @@ function getMsg()
 getMsg();
 setInterval(getMsg, "5000");
 </script>
+<script src="/assets/home_new/js/move-box.js"></script>

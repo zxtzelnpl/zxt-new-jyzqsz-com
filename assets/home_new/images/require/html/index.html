@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/QGindex.css"/>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <style type="text/css">
+        .list li {
+            height: 30px;
+            line-height: 30px;
+            border-left: 1px solid #e3e3e3;
+            border-right: 1px solid #e3e3e3;
+        }
+
+        .list li a {
+            color: #666;
+        }
+
+        .list li:hover {
+            background: #E04145;
+        }
+
+        .list li:hover a {
+            color: #fff;
+        }
+
+        .shawdow_box1 {
+            -webkit-box-shadow: 1px 1px 15px 3px #747577;
+            -moz-box-shadow: 1px 1px 15px 3px #747577;
+            -ms-box-shadow: 1px 1px 15px 3px #747577;
+            box-shadow: 1px 1px 15px 3px #747577;
+        }
+
+        .mod {
+        }
+
+        .mod .tit {
+            background: #c85252;
+            color: #fff;
+        }
+
+        .mod .btn {
+            border: 1px solid #c85252;
+            color: #c85252;
+        }
+
+        .mod1 {
+            border: 1px solid #626262
+        }
+
+        .mod1 .tit {
+            background: #dadcdb;
+            color: #6A7177;
+        }
+
+        .mod1 .btn {
+            border: 1px solid #6A7177;
+            color: #6A7177;
+        }
+
+        .bor2 {
+            border-bottom: 2px solid #fff;
+        }
+
+        table tr {
+            background: #dcdedd;
+        }
+
+        table tr td {
+            border: 1px solid #fff;
+            padding: 5px 0;
+            /*border-bottom: 1px solid #fff;*/
+        }
+
+        table tr td:first-child {
+            text-align: center;
+        }
+
+        table tr td:nth-child(3), table tr td:nth-child(4) {
+            text-align: center;
+        }
+
+        .bc_rrr {
+            background: #C85252;
+        }
+    </style>
+</head>
+<body>
+<div class="wp bc_12">
+    <div style="width: 1120px;" class="ma0 clearfix fs12 c_20">
+        <div class="fl" style="height: 45px;line-height: 45px;">快乐，简单投资，实现持续稳健获利</div>
+        <div class="fr" style="height: 45px;line-height: 45px;"><img src="../../App/Test/images/kh.png" class="fl"
+                                                                     style="margin-top: 15px;padding: 0 8px;"
+                                                                     alt=""/><span class="fl">投诉电话：0755-82560701 周一至五 09:00-17:30</span>
+        </div>
+        <div class="fr" style="height: 45px;line-height: 45px;"><img src="../../App/Test/images/kh.png" class="fl"
+                                                                     style="margin-top: 15px;padding: 0 8px;"
+                                                                     alt=""/><span class="fl">客服电话：0755-82567081 周一至五 09:00-17:00</span>
+        </div>
+    </div>
+</div>
+<div class="wp">
+    <div class="ma0 clearfix pr" style="width: 1120px;">
+        <img src="../img/2.jpg" class="fl" style="margin: 25px;"/>
+        <div class="fr" style="margin-top: 46px;">
+            <ul class="clearfix fs12 c_20">
+                <li class="fl cp" onclick="window.location.href='http://www.jyzqsz.com/index/index.html'"
+                    style="padding: 0 20px;">首页
+                </li>
+                <li class="fl cp" onclick="window.location.href='http://www.jyzqsz.com/productcenter/index.html'"
+                    style="padding: 0 20px;">产品中心
+                </li>
+                <li class="fl cp" onclick="window.location.href='http://www.jyzqsz.com/investmentteam/index.html'"
+                    style="padding: 0 20px;">投研团队
+                </li>
+                <li class="fl cp" onclick="window.location.href='http://www.jyzqsz.com/newslist/index.html'"
+                    style="padding: 0 20px;">君银资讯
+                </li>
+                <li class="fl cp" style="padding-left:20px ;"
+                    onclick="window.location.href='http://www.jyzqsz.com/aboutus/index.html'">关于我们
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wp">
+    <img src="../img/1.jpg" class="db wp" alt=""/>
+</div>
+<div class="wp clearfix">
+    <div class="ma0" style="width: 1200px;">
+        <div class="fs12" style="padding-top: 50px;">
+            <span class="fwb cp" onclick="window.location.href='http://www.jyzqsz.com/index/index.html'">首页</span><span
+                class="fwb"> ></span><span class="fwb"> 投资者教育</span><span class="fwb"> ></span><span
+                style="color: #1263ac;"> 客户投诉电话：0755-82560701 0755-82567081</span>
+        </div>
+
+        <div class="clearfix" style="margin-top: 20px;">
+            <div class="fl bc_12" style="width: 190px;height: 3780px;" id="leftNav">
+                <div class="gridern tac cp clearfix" style="height: 80px;line-height: 80px;">
+                    <span style="color: #c85252;" class="fwb fs18">投资者教育</span>
+                </div>
+                <div class="wp fs16 tac bc_rrr c_11 cp" id="act" style="height: 40px;line-height: 40px;"><img
+                        src="../img/19.png" class="fl" style="margin-left: 8px;" alt=""/>打击非法证券活动
+                </div>
+                <div class="fs16 tac cp" id="danger" style="line-height: 50px;"><img
+                        src="../img/24.png" class="fl" style="margin-left: 8px;margin-top: 6px;" alt=""/>风险揭示书公示
+                </div>
+                <div class="fs16 tac cp" id="warning" style="line-height: 50px;">
+                    <img src="../img/warning.png" class="fl" style="margin-top: 9px;margin-left: 11px;" alt=""/>
+                    警惕互联网非法荐股
+                </div>
+                <div class="fs16 tac cp" id="forth" style="line-height: 25px;">
+                    <img src="../img/warning.png" class="fl" style="margin-top: 9px;margin-left: 11px;" alt=""/>
+                    险有所知、投有所择、老有所享
+                </div>
+            </div>
+
+            <div class="fl clearfix" id="act_content" style="width: 1010px;">
+                <div class="fr" style="width: 978px;">
+                    <div class="clearfix fs12 c_11">
+                        <div class="fl shawdow_box1 mod scale2 tab animate1" titl="content1" style="width: 320px;">
+                            <div class="tac fwb tit" style="height: 118px;">
+                                <div style="padding-top: 30px;">非法信冒证券公司</div>
+                                <div>证券投资咨询公司等机构黑名单</div>
+                                <div>(2017年第10期)</div>
+                            </div>
+                            <div class="bc_11 tac" style="height: 68px;padding-top: 50px;">
+                                <div class="ma0 fwb cp btn" style="width: 80px;height: 25px;line-height: 25px;">了解详情
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl mod1 tab animate1" titl="content2" style="width: 320px;margin-left:5px;">
+                            <div class="tac fwb tit" style="height: 118px;">
+                                <div style="padding-top: 46px;">"投资者保护 - 明规则.识风险"案例巡展</div>
+                                <div>——防范违规经营篇(三)</div>
+                            </div>
+                            <div class="bc_11 tac" style="height: 68px;padding-top: 50px;">
+                                <div class="ma0 fwb cp btn" style="width: 80px;height: 25px;line-height: 25px;">了解详情
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl mod1 tab animate1" titl="content3" style="width: 320px;margin-left:5px ;">
+                            <div class="tac fwb tit" style="height: 118px;">
+                                <div style="padding-top: 46px;">认清本质，抵制诱惑</div>
+                                <div>远离非法证券期货活动</div>
+                            </div>
+                            <div class="bc_11 tac" style="height: 68px;padding-top: 50px;">
+                                <div class="ma0 fwb cp btn" style="width: 80px;height: 25px;line-height: 25px;">了解详情
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fr cont" title="3780" style="width: 978px;" id="content1">
+                        <div class="tac fwb fs24" style="margin-top: 30px;">非法仿冒证券公司，证券投资咨询公司等机构黑名单</div>
+                        <div class="tac fs18">(2018年第4期)</div>
+                        <div class="fs16" style="margin-top: 10px;">
+                            <div class="tac bor2 fwb" style="background: #dcdedd;padding: 4px 0;">违规信息表现形式</div>
+                            <table class="fs14 wp"
+                                   border="0"
+                                   cellspacing="0"
+                                   cellpadding="0">
+                                <tr>
+                                    <td rowspan="6" class="fwb" style="width: 40px;">类别1</td>
+                                    <td colspan="2" class="fwb">非法投资咨询</td>
+                                </tr>
+                                <tr>
+                                    <td class="tac" style="width: 60px;">类别1-1</td>
+                                    <td>以招揽会员或客户为名，提供证券投资分析、预测或建议的方式,非法代理客户从事证券投资理财活动。</td>
+                                </tr>
+                                <tr>
+                                    <td class="tac">类别1-2</td>
+                                    <td>以保证收益，高额回报为诱饵，代客操盘，公开招揽客户，与投资者签订委托协议，从事非法证券活动</td>
+                                </tr>
+                                <tr>
+                                    <td class="tac">类别1-3</td>
+                                    <td>假冒合法证券经营机构网站或博客，发布非法证券活动信息，招揽会员或客户。</td>
+                                </tr>
+                                <tr>
+                                    <td class="tac">类别1-4</td>
+                                    <td>使用虚构的证券公司名称，利用门户网站的博客发布非法证券活动信息，招揽会员或客户，提供证券投资分析、预测或建议服务，变相从事非法证券投资咨询业务。</td>
+                                </tr>
+                                <tr>
+                                    <td class="tac">类别1-5</td>
+                                    <td>以门户网站，网站博客，QQ等为平台，散步非法证券活动信息，提供证券投资分析，预测或建议服务，收取咨询费，服务费。</td>
+                                </tr>
+                                <tr>
+                                    <td class="fwb">类别2</td>
+                                    <td class="fwb" colspan="2">非法发行证券</td>
+                                </tr>
+                                <tr>
+                                    <td class="fwb">类别3</td>
+                                    <td class="fwb" colspan="2">非法证券交易</td>
+                                </tr>
+                                <tr>
+                                    <td class="fwb">类别4</td>
+                                    <td class="fwb" colspan="2">
+                                        未取得相关证券期货业务资质的机构发布证券期货产品广告，这些广告本质上是实施非法荐股、虚假发行“原始股”、非法配资等非法证券活动。
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="wp fs14" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="fwb" style="width: 40px;">序号</td>
+                                    <td style="width: 750px;" class="fwb">非法仿冒机构网站、含有非法内容的网页、博客名称</td>
+                                    <td class="fwb">违规信息类别</td>
+                                    <td class="fwb">发现时间</td>
+                                </tr>
+                                <tr id="blackListOne">
+                                    <td colspan="4" class="tac fwb">非法仿冒机构网站、含有非法内容的网页</td>
+                                </tr>
+
+                                <tr id="blackListTwo">
+                                    <td colspan="4" class="fwb">含有非法内容的博客</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="fs16 cp" style="margin-top: 20px;">合法机构(请点击)</div>
+                        <div class="fs12 fwb"
+                             style="text-decoration: underline;margin-top: 15px;color: #1263ac;">
+                            <a style="color: #1263ac;" target="_blank"
+                               href="http://jg.sac.net.cn/pages/publicity/securities-list.html">证券公司信息公示</a>
+                        </div>
+                        <div class="fs12 fwb"
+                             style="margin-top:15px;border-bottom: 1px solid #284b9f;width: 150px;">
+                            <a style="color: #1263ac;" target="_blank"
+                               href="http://jg.sac.net.cn/pages/publicity/investment-list.html">证券投资咨询公司信息公示</a>
+                        </div>
+                        <div class="fs12 fwb" style="margin-top: 15px;text-decoration: underline;">
+                            <a style="color: #1263ac;" target="_blank"
+                               href="http://jg.sac.net.cn/pages/publicity/mi-sales-branch-publicity-list.html">证券公司分支机构信息查询</a>
+                        </div>
+                        <div class="fs14" style="margin-top: 20px;">
+                            声明：本次公布的“非法仿冒证券公司、证券投资咨询公司等机构黑名单”为中国证券业协会在2012年1月-2017年10月期间新发现的及尚未关闭或整改的非法网站、含有非法内容的网页、博客和仿冒合法机构的网站链接、咨询QQ号码，现进行公开曝光。《非法仿冒证券公司、证券投资咨询公司等机构黑名单》由协会定期发布，并持续更新。请广大投资者注意识别，提高警惕，防范风险。
+                        </div>
+                    </div>
+                    <div class="fr dn cont" title="2450" style="width: 978px;" id="content2">
+                        <div class="wp tac" style="padding-top: 30px;">
+                            <img src="../img/9.jpg" class="" alt=""/>
+                        </div>
+                    </div>
+                    <div class="fr dn cont" style="width: 978px;" title="2800" id="content3">
+                        <div class="wp tac" style="padding-top: 30px;">
+                            <img src="../img/10.png" class="" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fl clearfix dn" id="cont_danger" style="width: 1010px;">
+                <div class="fr" style="width: 978px;">
+                    <div class="wp " style="padding-top: 30px;">
+                        <div class="fwb fs34 c_11 tac" style="background: #C85252;padding: 10px 20px;">
+                            深圳君银证券投资咨询顾问有限公司投资顾问业务风险揭示书
+                        </div>
+                        <div class="c_19 fs16 tac" style="padding:20px 0 ;">
+                            特别提示：投资者签署本风险揭示书，表明投资者已经理解并愿意自行承担、接受证券投资顾问服务的风险和损失。
+                        </div>
+                        <div class="fwb fs20">尊敬的投资者：</div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            为使您更好地了解深圳君银证券投资咨询顾问有限公司投资顾问业务的风险，根据国家法律、行政法规、规章及其它规范性文件的规定，特提供本风险揭示书，请认真详细阅读，慎重决定是否接受深圳君银证券投资咨询顾问有限公司投资顾问服务。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            深圳君银证券投资咨询顾问有限公司投资顾问业务，是指深圳君银证券投资咨询顾问有限公司接受客户委托，按照约定，向客户提供涉及证券及证券相关产品的投资建议服务，辅助客户做出投资决策，并直接或者间接获取经济利益的经营活动。投资建议内容包括投资的品种选择、投资组合以及理财规划等。深圳君银证券投资咨询顾问有限公司投资顾问业务是我司投资咨询业务的高端形态，具备个性化财富管理的内涵，其服务形态包括但不限于账户诊断、资产配置以及全程投资咨询。您在接受深圳君银证券投资咨询顾问有限公司投资顾问服务前，必须了解的事项至少包括：
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            1、深圳君银证券投资咨询顾问有限公司（以下称“我司”）已具备证券投资咨询业务资格，您应通过营业场所或中国证券业协会网站等途径，查询、核实我司为您提供投资顾问服务的人员是否具备证券投资咨询执业资格并已经注册登记为证券投资顾问。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            2、请您充分了解前述我司投资顾问业务的含义，不论是否采纳我司投资顾问建议，均应自主做出投资决策并独立承担投资风险。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">3、我司及我司工作人员提供的证券投资顾问服务不能确保投资者获得盈利或本金不受损失。</div>
+                        <div class="fs14" style="padding: 5px 0;">4、我司及我司工作人员提供的投资建议具有针对性和时效性，不能在任何市场环境下长期有效。</div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            5、作为投资建议依据的证券研究报告和投资分析意见等可能存在不准确、不全面或者被误读的风险，您可以向证券投资顾问了解证券研究报告的发布人和发布时间以及投资分析意见的来源，以便在进行投资决策时做出理性判断。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            6、充分了解并理解《深圳君银证券投资咨询顾问有限公司投资顾问服务协议》中约定的证券投资顾问服务的收费标准和方式，并同意按约定支付费用。证券投资顾问服务收费通过公司账户收取，请勿向证券投资顾问人员或其他个人账户支付.
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            7、我司及我司工作人员可能存在道德风险，如发现投资顾问存在违法违规行为或利益冲突情形、泄露客户投资决策计划、传播虚假信息、进行关联交易等，您可以向我司投诉或向有关部门举报。我司投诉电话：0755-82567081
+                            0755-82560701
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            8、我司存在因停业、解散、撤销、破产，或者被中国证监会撤销相关业务许可、责令停业整顿等原因导致不能履行职责的风险。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">9、我司投资顾问人员存在因离职、离岗等原因导致更换投证券资顾问服务人员并影响服务连续性的风险。</div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            10、在接受证券投资顾问服务前，您应向我司说明您真实的资产与收入状况、投资经验、投资需求和风险偏好等情况并接受评估，以便于我司根据您的风险承受能力和服务需求，为您提供适当的证券投资顾问服务，否则若导致我司向您提供不适当证券投资顾问服务的风险，其责任当由您自行承担。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            11、在接受证券投资顾问服务前，您应向我司提供真实、有效的联系方式和服务获取方式，如有变动须及时向我司进行说明，如因贵方原因或不可抗力因素导致未能及时获取证券投资顾问服务，责任将由您自行承担。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            12、在接受证券投资顾问服务时，您应保管好您的证券账户、资金账户和相应的密码，不要委托证券投资顾问人员管理您的证券账户、资金账户，代理买卖证券，否则由此导致的风险将由您自行承担。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            13、我司投资顾问业务中，有部分以软件工具、终端设备等为载体向客户提供投资建议。我司提供的终端设备及软件工具的基本功能在于为您理性投资决策提供信息服务支持。终端设备及软件工具的全部信息来源于对证券交易所提供的原始交易数据信息及网络等其他途径公布的财经金融资讯的整理、加工和集成，我司不对该信息的真实性承担保证责任；通过终端设备及软件工具提供的数据信息内容，不应视为我司明示、默示地承诺保证证券投资的收益。您在投资决策中应知悉证券投资的风险特质，并根据自身的投资经验以及风险承受能力独立作出分析、决策。您在使用终端设备及软件工具前应认真阅读用户使用手册和产品说明书，确保您自备的终端设备与我司提供的软件工具的可兼容性、我司为您提供的终端设备处于可正常工作状态，并按照终端设备及软件工具的使用说明正确操作；对于您在操作过程中因您自备的终端设备与我司提供的软件工具不兼容、以及因您自身原因导致该软件工具、终端设备操作不当或失误，或由于我司合作第三方原因造成数据资料传输或储存错误致信息提供出现延迟中断、遗漏、数据错误等情况所致损失，及因遭受到病毒入侵、黑客攻击系统致提供信息错误引致的风险，我司不承担赔偿责任。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">
+                            14、本风险揭示书的揭示事项仅为列举性质，未能详尽列明投资者接受证券投资顾问服务所面临的全部风险和可能导致投资者投资损失的所有因素。投资者在接受证券投资顾问服务前，应认真阅读并理解相关业务规则、证券投资顾问服务协议及本风险揭示书的全部内容。接受证券投资顾问服务的投资者，应自行承担投资风险，证券投资咨询机构不以任何方式向投资者做出不受损失或者取得最低收益的承诺。
+                        </div>
+                        <div class="fs14" style="padding: 5px 0;">本人已阅读并理解上述《风险揭示书》，并愿意承担相关风险，现向贵司申请购买投资顾问服务。</div>
+                        <div class="fs14" style="padding: 5px 0;">客户签章：</div>
+                        <div class="fs14" style="padding: 5px 0;">日期：</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="fl clearfix dn" id="content_warning" style="width:1010px">
+                <div class="fr" style="width: 978px;">
+                    <div class="fwb fs34 c_11 tac" style="background: #C85252;padding: 10px 20px;">
+                        警惕互联网“非法荐股”风险
+                    </div>
+                    <div class="h20"></div>
+                    <div class="fs14" style="padding: 5px 0;font-size:16px;line-height:2;">
+                        近期，不法分子利用微信、微博、网络直播室、论坛、股吧、QQ等互联网工具或平台进行“非法荐股”活动有所抬头。非法活动花样繁多，欺骗性强，而不法分子往往无固定经营场所，流窜作案，有的甚至藏身境外，严重损害投资者利益和证券市场正常秩序。在此提醒广大投资者，根据《证券法》《期货交易管理条例》《证券、期货投资咨询管理暂行办法》等法律法规规定，从事证券、期货投资咨询业务，必须依法取得中国证监会的业务许可；未经中国证监会许可，任何单位和个人均不得从事证券、期货投资咨询业务。请投资者选择合法证券期货经营机构，获取相关投资咨询服务，对各类“荐股”活动保持高度警惕，远离“非法荐股”活动，以免遭受财产损失。合法证券期货经营机构名单可在中国证监会、中国证券业协会、中国期货业协会网站查询。
+                    </div>
+                    <div class="h20"></div>
+                    <div class="clearfix fs12 c_11"
+                         style="display:flex;align-items: center;justify-content: space-around">
+                        <div class="fl shawdow_box1 mod scale2 tab animate1" titl="warning_content1"
+                             style="width: 320px;">
+                            <div class="tac fwb tit" style="height: 118px;">
+                                <div style="padding-top: 30px;">投资者保护</div>
+                                <div>明规则、识风险案例巡展</div>
+                                <div>——操纵市场篇（二）</div>
+                            </div>
+                            <div class="bc_11 tac" style="height: 68px;padding-top: 50px;">
+                                <div class="ma0 fwb cp btn" style="width: 80px;height: 25px;line-height: 25px;">了解详情
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fl mod1 tab animate1" titl="warning_content2" style="width: 320px;margin-left:5px;">
+                            <div class="tac fwb tit" style="height: 118px;">
+                                <div style="padding-top: 30px;">投资者保护</div>
+                                <div>明规则、识风险案例巡展</div>
+                                <div>——操纵市场篇（四）</div>
+                            </div>
+                            <div class="bc_11 tac" style="height: 68px;padding-top: 50px;">
+                                <div class="ma0 fwb cp btn" style="width: 80px;height: 25px;line-height: 25px;">了解详情
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h20"></div>
+                    <div class="fr cont" title="3780" style="width: 978px;" id="warning_content1">
+                        <img style="margin:0 auto;display:block;" src="../img/warning_content1.jpg" alt="">
+                    </div>
+                    <div class="fr cont" title="3780" style="width: 978px;" id="warning_content2">
+                        <img style="margin:0 auto;display:block;" src="../img/warning_content2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="fl clearfix dn" id="content_forth" style="width:1010px">
+                <img src="../img/forth/one.jpg" alt="" style="display:block;margin:0 auto;box-shadow: 0 8px 36px rgba(0,0,0,.15)">
+                <img src="../img/forth/two.jpg" alt="" style="display:block;margin:0 auto;box-shadow: 0 8px 36px rgba(0,0,0,.15)">
+                <img src="../img/forth/three.jpg" alt="" style="display:block;margin:0 auto;box-shadow: 0 8px 36px rgba(0,0,0,.15)">
+            </div>
+        </div>
+    </div>
+    <div class="wp" style="border-top:1px solid #8D939E ;margin-top: 10px;">
+        <div class="ma0 clearfix" style="width: 1200px;padding: 30px 0;">
+            <div class="fl">
+                <div class="c_20 fs30">合作伙伴</div>
+                <div class="c_19 fs14">Partner</div>
+            </div>
+            <div class="fl" style="margin-left: 80px;"><img src="../img/4.jpg" alt="" class="cp"
+                                                            onclick="window.location.href='http://www.acai365.com/'"/>
+            </div>
+            <div class="fl" style="margin-left: 50px;"><img src="../img/5.png" alt="" class="cp"
+                                                            onclick="window.location.href='https://v.qq.com/'"/></div>
+            <div class="fl" style="margin-left: 50px;"><img src="../img/6.png" alt="" class="cp"
+                                                            onclick="window.location.href='http://www.kancaijing.com/'"/>
+            </div>
+            <div class="fl" style="margin-left:50px ;"><img src="../img/7.png" alt=""/></div>
+        </div>
+    </div>
+
+    <!--foot-->
+    <div class="wp c_12" style="padding: 18px 0;min-width: 1200px;background:#c85252;">
+        <div class="ma0 clearfix" style="min-width: 1200px;width: 1200px;">
+            <div class="fl ml4em">
+            </div>
+            <div class="fl c_11 fs14" style="padding:15px;">
+                <div class="ptb4">公司地址：广东省深圳市福田区沙头街道下沙京基滨河时代广场A座41楼05室</div>
+                <div class="ptb4">ICP备案：粤ICP备15035969号　　版权所有©深圳君银证券投资咨询顾问有限公司</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="../js/blacklist.js"></script>
+<script>
+  $(function () {
+    $("#city").click(function () {
+      $(this).next().show();
+      $(this).next().attr("title", "show");
+    });
+    $(document).click(function (e) {
+      e.stopPropagation();
+      if ($("#cityList").attr("title") == "show" && e.target.getAttribute("id") !== "city") {
+        console.log(11111111)
+        $("#cityList").hide();
+      }
+    });
+
+
+    $(".tab").mouseover(function () {
+      $(".tab").removeClass("shawdow_box1 mod scale2").addClass("mod1")
+      $(this).addClass("shawdow_box1 mod scale2 ").removeClass("mod1");
+      $(".cont").hide();
+      $("#" + $(this).attr('titl')).show();
+      $("#leftNav").css("height", $("#" + $(this).attr('titl')).attr("title") + "px");
+    });
+
+
+    $("#danger").click(function () {
+      $("#cont_danger").show();
+      $("#act_content").hide();
+      $("#content_warning").hide();
+      $("#content_forth").hide();
+
+      $("#leftNav").css("height", "1200px");
+      $(this).find("img").attr("src", "../img/23.png");
+      $(this).addClass("c_11 bc_rrr");
+      $("#act").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/20.png");
+      $("#warning").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/warning.png");
+      $("#forth").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/warning.png");
+    });
+
+    $("#act").click(function () {
+      $("#act_content").show();
+      $("#cont_danger").hide();
+      $("#content_warning").hide();
+      $("#content_forth").hide();
+
+      $(this).find("img").attr("src", "../img/19.png");
+      $(this).addClass("c_11 bc_rrr");
+      $("#danger").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/24.png");
+      $("#warning").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/warning.png");
+      $("#forth").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/warning.png");
+    });
+
+    $("#warning").click(function () {
+      $("#act_content").hide();
+      $("#cont_danger").hide();
+      $("#content_warning").show();
+      $("#content_forth").hide();
+
+
+      $(this).find("img").attr("src", "../img/warning_select.png");
+      $(this).addClass("c_11 bc_rrr");
+      $("#act").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/20.png");
+      $("#danger").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/24.png");
+      $("#forth").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/warning.png");
+    });
+
+    $('#forth').click(function () {
+      $("#act_content").hide();
+      $("#cont_danger").hide();
+      $("#content_warning").hide();
+      $("#content_forth").show();
+
+      $(this).find("img").attr("src", "../img/warning_select.png");
+      $(this).addClass("c_11 bc_rrr");
+      $("#act").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/20.png");
+      $("#danger").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/24.png");
+      $("#warning").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/warning.png");
+    });
+
+    function init(){
+      var str = location.search.slice(1).split('&');
+      console.log(str);
+      var select;
+
+      str.forEach(function(query_str){
+        var query = query_str.split('=');
+        if(query[0]==='select'){
+          select = query[1]
+        }
+      })
+
+      if(select=='4'){
+        $("#act_content").hide();
+        $("#cont_danger").hide();
+        $("#content_warning").hide();
+        $("#content_forth").show();
+
+        $('#forth').find("img").attr("src", "../img/warning_select.png");
+        $('#forth').addClass("c_11 bc_rrr");
+        $("#act").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/20.png");
+        $("#danger").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/24.png");
+        $("#warning").removeClass("c_11 bc_rrr").find("img").attr("src", "../img/warning.png");
+      }
+    }
+
+    /*关于黑名单*/
+    (function () {
+
+      function formatDate(index, data) {
+        return '' +
+          '<tr>' +
+          '  <td class="fwb">' + index + '</td>' +
+          '  <td class="" style="padding-left: 5px;">' + data.text + '</td>' +
+          '  <td>' + data.type + '</td>' +
+          '  <td>' + data.time + '</td>' +
+          '</tr>'
+      }
+
+
+      var blackListOneHtml = blackListOne.reduce(function (total, currentValue, currentIndex) {
+        total += formatDate(currentIndex + 1, currentValue);
+        return total;
+      }, '');
+
+      var blackListTwoHtml = blackListTwo.reduce(function (total, currentValue, currentIndex) {
+        total += formatDate(currentIndex + blackListOne.length + 1, currentValue);
+        return total;
+      }, '');
+
+      $('#blackListOne').after(blackListOneHtml);
+      $('#blackListTwo').after(blackListTwoHtml);
+
+      init();
+
+    }())
+
+
+  });
+</script>

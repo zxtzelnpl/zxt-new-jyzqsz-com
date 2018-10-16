@@ -1,3 +1,5 @@
+@import '../const';
+
 .move-box{
   position:fixed;
   top:0;
@@ -11,7 +13,7 @@
   &-head{
     width:100%;
     height: 32px;
-    background: #cb3436;
+    background: @primaryColor;
     overflow: hidden;
     &-close{
       margin:4px;
@@ -53,7 +55,7 @@
     justify-content: space-around;
     width:140px;
     height: 30px;
-    background: #d14447;
+    background: @primaryColor;
     color:#fff;
     text-decoration: none;
     &:hover{

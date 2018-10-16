@@ -73,7 +73,7 @@
     <div class="page-information">
         <div class="page-information-boxes">
             <div class="page-information-box dynamics-info">
-                <h2 class="page-information-box-title">投资观点</h2>
+                <h2 class="page-information-box-title">投顾观点</h2>
                 <span class="more"><a href="/information/tzgd.html">更多></a></span>
                 <div class="lis">
                 <?php if(count($tzgd_list)): ?>
@@ -237,22 +237,24 @@
                         智能量化股池
                     </div>
                     <div class="product-box-content">
+                    <?php foreach($product_list as $k => $v): ?>
                         <a href="/product/index.html" class="product-box-content-li">
-                            <span class="product-box-content-title">短线锦囊</span>
-                            <span class="product-box-content-sub">热点聚焦 短线智胜</span>
+                            <span class="product-box-content-title"><?php echo $v['name']; ?></span>
+                            <span class="product-box-content-sub"><?php echo $v['keywords']; ?></span>
                         </a>
-                        <a href="/product/index.html" class="product-box-content-li">
-                            <span class="product-box-content-title">操盘先锋</span>
-                            <span class="product-box-content-sub">质优个股+操盘策略</span>
-                        </a>
-                        <a href="/product/index.html" class="product-box-content-li">
-                            <span class="product-box-content-title">策略调研</span>
-                            <span class="product-box-content-sub">高成长+低估值</span>
-                        </a>
-                        <a href="/product/index.html" class="product-box-content-li">
-                            <span class="product-box-content-title">私人订制</span>
-                            <span class="product-box-content-sub">私人专属 策略订制</span>
-                        </a>
+                    <?php endforeach; ?>
+                       <!--  <a href="/product/index.html" class="product-box-content-li">
+                           <span class="product-box-content-title">操盘先锋</span>
+                           <span class="product-box-content-sub">质优个股+操盘策略</span>
+                       </a>
+                       <a href="/product/index.html" class="product-box-content-li">
+                           <span class="product-box-content-title">策略调研</span>
+                           <span class="product-box-content-sub">高成长+低估值</span>
+                       </a>
+                       <a href="/product/index.html" class="product-box-content-li">
+                           <span class="product-box-content-title">私人订制</span>
+                           <span class="product-box-content-sub">私人专属 策略订制</span>
+                       </a> -->
                     </div>
                 </div>
                 <div class="product-box product-box-strategy">
@@ -280,16 +282,16 @@
                     </div>
                     <div class="product-box-content">
                         <div class="product-box-content-li">
-                            <span class="product-box-content-title">百名 金牌专家顾问</span>
+                            <span class="product-box-content-title">众多 专家顾问</span>
                         </div>
                         <div class="product-box-content-li">
-                            <span class="product-box-content-title">1对1 专属投资助理</span>
+                            <span class="product-box-content-title">专属 投资助理</span>
                         </div>
                         <div class="product-box-content-li">
-                            <span class="product-box-content-title">24h 全程跟踪服务</span>
+                            <span class="product-box-content-title">全程 贴心服务</span>
                         </div>
                         <div class="product-box-content-li">
-                            <span class="product-box-content-title">0基础 专业股市教学</span>
+                            <span class="product-box-content-title">0基础 系统教学</span>
                         </div>
                     </div>
                 </div>
@@ -534,5 +536,10 @@ function getMsg()
 }
 getMsg();
 setInterval(getMsg, "5000");
+
+      $('.index-number-p-a').on('click',function(){
+        alert('正在开发中，尽情期待');
+      })
+
 </script>
 <script src="/assets/home_new/js/move-box.js"></script>

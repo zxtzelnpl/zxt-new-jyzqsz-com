@@ -26,7 +26,7 @@
     <div class="page-information-banner"></div>
     <div class="page-information-boxes">
         <div class="page-information-box dynamics-info">
-            <h2 class="title">投资观点</h2>
+            <h2 class="title">投顾观点</h2>
             <span class="more"><a href="/information/tzgd.html">更多></a></span>
             <div class="lis">
                 <?php if(count($tzgd_list)): ?>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,12 +57,12 @@
                     <div class="content-text">
                         <div class="content-text-t1998">
                             <div class="time">1998</div>
-                            <div class="text">民众投顾获得经营证券期货业务许可证</div>
+                            <div class="text">民众投顾获得《经营证券期货业务许可证》</div>
                             <div class="line"></div>
                         </div>
                         <div class="content-text-t2008">
                             <div class="time">2008</div>
-                            <div class="text">公司多为嘉宾受邀参与湖北卫视等多家电视财经栏目的制作与播出工作，并获得一致认可</div>
+                            <div class="text">公司多位嘉宾受邀参与湖北卫视等多家电视财经栏目的制作与播出工作，并获得一致认可</div>
                             <div class="line"></div>
                         </div>
                         <div class="content-text-t2010">
@@ -77,7 +77,7 @@
                         </div>
                         <div class="content-text-t2015">
                             <div class="time">2015</div>
-                            <div class="text">民众投资董事会研究决定，相继成立上海、武汉分公司，并逐渐获得市场的认可</div>
+                            <div class="text">民众投顾董事会研究决定，相继成立上海、武汉分公司，并逐渐获得市场的认可</div>
                             <div class="line"></div>
                         </div>
                         <div class="content-text-t2016">
@@ -156,16 +156,16 @@
                 <div class="content-body">
                     <div class="content-box">
                         <div class="content-box-text">关于我们</div>
-                        <img class="content-box-qr" src="/assets/home_new/images/ewm.jpg"/>
+                        <img class="content-box-qr" src="/assets/home_new/images/ewm.png"/>
                     </div>
                     <div class="content-text company-name">
-                        深圳民众证券投资咨询顾问有限公司
+                        民众证券投资咨询有限公司
                     </div>
                     <div class="content-line"></div>
                     <div class="content-text">
-                        <p>ICP备案：粤ICP备15035969号</p>
-                        <p>版权所有&copy;深圳民众证券投资咨询顾问有限公司</p>
-                        <p>公司地址：广东省深圳市福田区沙头街道下沙京基滨河时代广场A座41楼05室</p>
+                        <p style="display:none">ICP备案：粤ICP备15035969号</p>
+                        <p>版权所有&copy;民众证券投资咨询有限公司</p>
+                        <p>公司地址：山西综改示范区太原学府园区南中环街529号B座14层1406B</p>
                     </div>
                 </div>
             </div>
