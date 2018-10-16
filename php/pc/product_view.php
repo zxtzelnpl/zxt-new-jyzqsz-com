@@ -115,14 +115,14 @@
                     </a>
                 </div>
                 <?php endif; ?>
-            <?php endforeach; ?> 
-            </div>     
+            <?php endforeach; ?>
+            </div>
         </div>
     </div>
 <?php endforeach; ?>
 <?php endif; ?>
-  
-    
+
+
     <!--私人订制-->
     <!-- <div class="si-ren-ding-zhi">
         <div class="wrap">
@@ -133,7 +133,7 @@
         </div>
     </div> -->
     <!--主体活动-->
-    <div class="zhu-ti-huo-dong">
+    <div class="zhu-ti-huo-dong" style="display:none">
         <div class="wrap">
             <h2 class="title">主题活动</h2>
             <a href="/product/zthd/<?php echo $zthd_info['id']; ?>.html">
@@ -215,7 +215,7 @@
         }
       })
 
-      
+
     })
 </script>
 </html>

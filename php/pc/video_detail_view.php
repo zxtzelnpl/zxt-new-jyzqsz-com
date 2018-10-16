@@ -29,7 +29,7 @@
 </div>
 
 
-<!--君银财经-详情-->
+<!--民众财经-详情-->
 <div class="page-finance-detail">
     <div class="page-finance-detail-video">
         <div class="video">
@@ -50,7 +50,7 @@
             </a>
         <?php endforeach; ?>
         <?php endif; ?>
-            
+
         </div>
     </div>
 </div>

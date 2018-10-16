@@ -26,7 +26,7 @@
             <h2 class="product-title">大咖荟萃</h2>
             <div class="product-division"><span></span></div>
             <div class="product-summary">
-                君银投顾汇聚了行业内众多一线知名金融大咖，涵盖湖北卫视《天生阿财》的常住嘉宾、第一财经《今日股市》的特邀嘉宾、深圳财经频道的特邀嘉宾等，用专业权威的投资的理念投资方法引领投资者理性投资。
+                民众投顾汇聚了行业内众多一线知名金融大咖，涵盖湖北卫视《天生阿财》的常住嘉宾、第一财经《今日股市》的特邀嘉宾、深圳财经频道的特邀嘉宾等，用专业权威的投资的理念投资方法引领投资者理性投资。
             </div>
         </li>
         <li class="product-type-li">
@@ -34,7 +34,7 @@
             <h2 class="product-title">团队服务</h2>
             <div class="product-division"></div>
             <div class="product-summary">
-                君银投顾根据多年来市场风格的变化规律，相继组件了强势优选团队、牛眼主升团队、量化驱动团队，以此迎合投资者多元化的投资风格。
+                民众投顾根据多年来市场风格的变化规律，相继组件了强势优选团队、牛眼主升团队、量化驱动团队，以此迎合投资者多元化的投资风格。
             </div>
         </li>
         <li class="product-type-li">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                 <?php endforeach; ?>
-                    
+
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -90,7 +90,7 @@
                 <div class="swiper-slide">
                     <img class="team-detail-img" src="<?php echo $v['introduce_pic']; ?>" alt="">
                 </div>
-            <?php endforeach; ?>  
+            <?php endforeach; ?>
             </div>
         </div>
     </div>

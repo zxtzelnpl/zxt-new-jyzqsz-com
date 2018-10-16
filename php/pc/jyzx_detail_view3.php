@@ -24,7 +24,7 @@
 
 <!--面包屑导航-->
 <div class="crumbs">
-    <a href="/information/index.html">君银资讯</a>
+    <a href="/information/index.html">民众资讯</a>
     <a href="/information/jrtt.html" class="crumbs-add">今日头条</a>
     <a href="#" class="crumbs-add"><?php echo $information_detail['title']; ?></a>
 </div>
@@ -66,7 +66,7 @@
         <a class="page-article-side-a" href="/information/jrtt_detail/<?php echo $v['id']; ?>.html"><?php echo $v['title']; ?></a>
         <?php endforeach; ?>
         <?php endif; ?>
-       
+
     </div>
 </div>
 

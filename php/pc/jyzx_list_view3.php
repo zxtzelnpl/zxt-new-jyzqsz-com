@@ -31,7 +31,7 @@
 </div>
 
 <div class="top-news container">
-    <h2 class="top-news-head">君银头条</h2>
+    <h2 class="top-news-head">民众头条</h2>
     <div class="top-news-content">
     <?php if(count($jrtt_list)): ?>
         <?php foreach($jrtt_list as $key => $v): ?>

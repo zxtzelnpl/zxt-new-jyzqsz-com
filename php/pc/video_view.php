@@ -26,11 +26,11 @@
 <!--面包屑导航-->
 <div class="crumbs">
     <a href="/">首页</a>
-    <a href="/video/index.html" class="crumbs-add">君银财经</a>
+    <a href="/video/index.html" class="crumbs-add">民众财经</a>
 </div>
 
 
-<!--君银财经主体-->
+<!--民众财经主体-->
 <div class="page-finance">
     <div class="page-finance-nav">
         <div class="page-finance-nav-head">
@@ -96,7 +96,7 @@ $("#pagination").pagination({
     currentPage: page,
     totalPage: pages,
     callback: function(current) {
-    
+
     }
 });
 </script>

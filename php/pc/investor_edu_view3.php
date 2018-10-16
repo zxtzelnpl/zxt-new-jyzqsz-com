@@ -32,6 +32,8 @@
         <a class="investor-edu-nav-li" href="/Investor_edu/index/1.html">打击非法证券活动</a>
         <a class="investor-edu-nav-li" href="/Investor_edu/index/2.html">风险揭示书</a>
         <span class="investor-edu-nav-li active" >警惕互联网非法荐股</span>
+        <a class="investor-edu-nav-li double-line" href="/Investor_edu/index/4.html">险有所知、投有所择、老有所享</a>
+        <a class="investor-edu-nav-li double-line"  href="/Investor_edu/index/5.html">警惕互联网“非法荐股”风险</a>
     </div>
     <div class="investor-edu-content">
         <div class="investor-edu-content-vigilance">

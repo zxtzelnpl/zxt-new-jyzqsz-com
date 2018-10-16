@@ -24,7 +24,7 @@
 
 <!--面包屑导航-->
 <div class="crumbs">
-    <a href="/information/index.html">君银资讯</a>
+    <a href="/information/index.html">民众资讯</a>
     <a href="/information/tzgd.html" class="crumbs-add">资讯动态</a>
     <a href="#" class="crumbs-add"><?php echo $information_detail['Title']; ?></a>
 </div>
@@ -66,7 +66,7 @@
         <a class="page-article-side-a" href="/information/zxdt_detail/<?php echo $v['ID']; ?>.html"><?php echo $v['Title']; ?></a>
         <?php endforeach; ?>
         <?php endif; ?>
-       
+
     </div>
 </div>
 

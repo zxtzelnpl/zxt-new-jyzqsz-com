@@ -27,14 +27,14 @@
                 <span class="header-consultation-online-span">服务咨询</span>
             </a>
             <div class="header-consultation-phone">
-                <p class="header-consultation-phone-p">免费客服热线</p>
+                <p class="header-consultation-phone-p">服务热线</p>
                 <p class="header-consultation-phone-p">0755-82782361</p>
             </div>
         </div>
     </div>
 
-                    
-                    
+
+
     <!--头部导航-->
     <div class="header-nav">
         <ul class="header-nav-ul mynav">
@@ -59,7 +59,7 @@
         <img class="statement-close" src="/assets/home_new/images/icon_sm_off.png" alt="" data-action="hide-statement"/>
         <div class="statement-summary">
             <div class="statement-summary-title">
-                <p>民众证券投资咨询顾问有限公司声明</p>
+                <p>民众证券投资咨询有限公司声明</p>
                 <p class="double-line"></p>
             </div>
             <div class="statement-summary-content">
@@ -72,7 +72,7 @@
                 <p>请各位投资者提高警惕，谨防上当受骗，切实维护好自身权益。</p>
                 <p>特此声明！</p>
                 <p class="text-right">
-                    民众证券投资咨询顾问有限公司
+                    民众证券投资咨询有限公司
                 </p>
                 <p class="text-right">
                     2018-04-16
