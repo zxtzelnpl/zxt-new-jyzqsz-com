@@ -208,20 +208,60 @@
 
 
     <!--民众风采-->
-    <div class="reference">
+    <!--民众风采-->
+    <div class="reference" style="display:none">
+        <div class="wrap">
+            <h2 class="title">民众内参</h2>
+            <a class="sub-title" href="#">更多 ></a>
+            <div class="reference-boxes">
+                <div class="reference-box">
+                    <div class="reference-box-title">民众内参名称</div>
+                    <div class="reference-box-time">
+                        2018-01-01
+                    </div>
+                    <img class="reference-box-img" src="/assets/home_new/images/videos/25.jpg"/>
+                    <a href=# class="reference-box-link">
+                        查看内容
+                    </a>
+                </div>
+                <div class="reference-box">
+                    <div class="reference-box-title">民众内参名称</div>
+                    <div class="reference-box-time">
+                        2018-01-01
+                    </div>
+                    <img class="reference-box-img" src="/assets/home_new/images/videos/62.jpg"/>
+                    <a href=# class="reference-box-link">
+                        查看内容
+                    </a>
+                </div>
+                <div class="reference-box">
+                    <div class="reference-box-title">民众内参名称民众内参名称民众内参名称</div>
+                    <div class="reference-box-time">
+                        2018-01-01
+                    </div>
+                    <img class="reference-box-img" src="/assets/home_new/images/videos/33.jpg"/>
+                    <a href=# class="reference-box-link">
+                        查看内容
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reference" style="display:none">
         <div class="wrap">
             <h2 class="title">民众内参</h2>
             <a class="sub-title" href="/information/index.html">更多 ></a>
             <div class="reference-boxes">
-            <?php foreach($information_list as $key => $v): ?>
-                <a class="reference-box" href="/information/tzgd_detail/<?php echo $v['id']; ?>.html">
-                    <img src="<?php echo $v['pic_path']; ?>" alt="" class="reference-box-img">
-                    <div class="reference-box-info">
-                        <p class="reference-box-title"><?php echo $v['title']; ?></p>
-                        <p class="date"><?php echo substr($v['datetime'],0,10); ?></p>
-                    </div>
-                </a>
-            <?php endforeach; ?>
+                <?php foreach($information_list as $key => $v): ?>
+                    <a class="reference-box" href="/information/tzgd_detail/<?php echo $v['id']; ?>.html">
+                        <img src="<?php echo $v['pic_path']; ?>" alt="" class="reference-box-img">
+                        <div class="reference-box-info">
+                            <p class="reference-box-title"><?php echo $v['title']; ?></p>
+                            <p class="date"><?php echo substr($v['datetime'],0,10); ?></p>
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
 
@@ -282,7 +322,7 @@
                     </div>
                     <div class="product-box-content">
                         <div class="product-box-content-li">
-                            <span class="product-box-content-title">百名 专家顾问</span>
+                            <span class="product-box-content-title">众多 专家顾问</span>
                         </div>
                         <div class="product-box-content-li">
                             <span class="product-box-content-title">专属 投资助理</span>
@@ -493,7 +533,7 @@ $(function(){
 
     /*查过两行加上省略号*/
     eclipse('.finance-box-title',30);
-    eclipse('.reference-box-title',30);
+    eclipse('.reference-box-title',10);
     /*首页增加的民众信息的部分*/
     eclipse('.li-top .body',64);
     eclipse('.li-info-summary',56);
@@ -536,5 +576,10 @@ function getMsg()
 }
 getMsg();
 setInterval(getMsg, "5000");
+
+      $('.index-number-p-a').on('click',function(){
+        alert('正在开发中，尽情期待');
+      })
+
 </script>
 <script src="/assets/home_new/js/move-box.js"></script>

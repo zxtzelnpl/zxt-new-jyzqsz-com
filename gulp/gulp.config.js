@@ -12,7 +12,7 @@ function makeUrl(dir){
     },
     style:{
       from:`${src}/less/${dir}/*.less`,
-      watch:[`${src}/less/const.less`,`${src}/less/${dir}/**/*.less`],
+      watch:`${src}/less/${dir}/*.less`,
       to:`${dist}/${dir}/css`,
     },
     html:{

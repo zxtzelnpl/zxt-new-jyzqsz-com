@@ -1,4 +1,4 @@
-@import "./common/const";
+@import "./common/const.less";
 .index {
 
   /*指数*/
@@ -180,98 +180,9 @@
 
 /*产品相关*/
 .product {
-  margin-top: 120px;
   background: #f0f3f5;
   padding-bottom: 80px;
-  /*&-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 1200px;
-    height: 600px;
-  }*/
 }
-/*.product-box {
-  display: flex;
-  width: 600px;
-  &-info {
-    box-sizing: border-box;
-    padding: 30px 40px;
-    width: 300px;
-    height: 300px;
-    background:#fff;
-    &-title {
-      position: relative;
-      padding-bottom: 24px;
-      font-size: 30px;
-      line-height: 1;
-      color: #333333;
-      &:after {
-        position: absolute;
-        bottom: 0;
-        content: "";
-        display: block;
-        width: 24px;
-        height: 1px;
-        background: #e5e5e5;
-      }
-    }
-    &-detail {
-      box-sizing: border-box;
-      height:120px;
-      padding-top: 24px;
-      font-size: 16px;
-      color: #666666;
-    }
-    &-link {
-      margin-top: 30px;
-      display: block;
-      width: 120px;
-      height: 36px;
-      border-radius: 18px;
-      box-sizing: border-box;
-      line-height: 32px;
-      border:2px solid @primaryColor;
-      text-align: center;
-      color:@primaryColor;
-      background:#fff;
-      transition:all .2s;
-    }
-  }
-  &-pic {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    &-img {
-      position: absolute;
-      width: 320px;
-    }
-    .cover {
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: none;
-      content: "";
-      width: 300px;
-      height: 300px;
-      box-sizing: border-box;
-      border: 2px solid @primaryColor;
-    }
-  }
-
-
-  &-info-link:hover{
-    color: #fff;
-    background: @primaryColor;
-  }
-
-  &:nth-child(1) &-pic-img, &:nth-child(2) &-pic-img {
-    left: -20px;
-  }
-  &:nth-child(3) &-pic-img, &:nth-child(4) &-pic-img {
-    right: -20px;
-  }
-}*/
 @boxHeight:533px;
 @boxTitleHeight:107px;
 @indexProductImageUrl:'/assets/home_new/images/indexProduct/';
@@ -442,41 +353,44 @@
 /*民宗内参*/
 .reference {
   padding-bottom: 80px;
-  background:#fff;
   &-boxes {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
   &-box {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: pointer;
-
-    width:600px;
-    &-img {
-      display: block;
-      width: 220px;
-      height: 160px;
-      .img-hover();
-    }
-    &-info {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      padding: 14px 40px 14px 20px;
-      width: 360px;
-      height: 150px;
-      box-sizing: border-box;
-      font-size: 16px;
-      .date {
-        color: #999;
-      }
-    }
+    padding-top: 40px;
+    width: 370px;
+    height: 420px;
+    box-sizing: border-box;
+    box-shadow: 0 0 24px rgba(68, 162, 242, 0.2);
+    text-align: center;
+    background: #ffffff;
     &-title{
-      .text-hover();
+      font-weight: bold;
+      font-size: 24px;
+    }
+    &-time{
+      margin-top: 5px;
+      font-size: 20px;
+      color:gray;
+    }
+    &-img{
+      margin: 20px auto 0;
+      display: block;
+      width: 320px;
+      height: 180px;
+      box-shadow: 4px 1px 4px rgba(102,102,102,.85);
+    }
+    &-link{
+      display: block;
+      margin: 20px auto 0;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      color:#fff;
+      font-weight: bold;
+      background:url('@{imageUrl}/index/reference-button.png') no-repeat;
     }
   }
 }
