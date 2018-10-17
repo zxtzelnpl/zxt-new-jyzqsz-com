@@ -35,7 +35,12 @@ function dev() {
    */
   gulp.task('pc-style:dev', () => {
     return gulp.src(pc.style.from)
-      .pipe(plumber())
+      .pipe(plumber({
+        function(err){
+          console.log(err);
+          this.emit('less errorr end');
+        }
+      }))
       .pipe(less())
       .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
       .pipe(gulp.dest(pc.style.to))
