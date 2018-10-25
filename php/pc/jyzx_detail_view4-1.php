@@ -26,7 +26,7 @@
 <!--面包屑导航-->
 <div class="crumbs">
     <a href="/information/index.html">民众资讯</a>
-    <a href="/information/tzgd.html" class="crumbs-add">投顾观点</a>
+    <a href="/information/cljy.html" class="crumbs-add">策略纪要</a>
     <a href="#" class="crumbs-add"><?php echo $information_detail['title']; ?></a>
 </div>
 
@@ -36,7 +36,7 @@
     <div class="page-article-content">
         <div class="page-article-content-title">
             <div class="title"><?php echo $information_detail['title']; ?></div>
-            <div class="date"><?php echo date("Y-m-d",strtotime($information_detail['datetime'])); ?></div>
+            <div class="date"><?php echo date("Y-m-d",$information_detail['timestamp']); ?></div>
         </div>
         <div class="page-article-content-body newsdetail">
             <?php echo $information_detail['content']; ?>
@@ -45,11 +45,11 @@
         <div class="page-article-content-nav">
             <div class="prev">
                 <span>上一篇：</span>
-                <a class="link" href="/information/tzgd_detail/<?php echo $prev['id']; ?>.html"><?php echo $prev['title']; ?></a>
+                <a class="link" href="/information/cljy_detail/<?php echo $prev['id']; ?>.html"><?php echo $prev['title']; ?></a>
             </div>
             <div class="next">
                 <span>下一篇：</span>
-                <a class="link" href="/information/tzgd_detail/<?php echo $next['id']; ?>.html"><?php echo $next['title']; ?></a>
+                <a class="link" href="/information/cljy_detail/<?php echo $next['id']; ?>.html"><?php echo $next['title']; ?></a>
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
         </div>
         <?php if(count($hot_info)): ?>
         <?php foreach($hot_info as $v): ?>
-        <a class="page-article-side-a" href="/information/tzgd_detail/<?php echo $v['id']; ?>.html"><?php echo $v['title']; ?></a>
+        <a class="page-article-side-a" href="/information/cljy_detail/<?php echo $v['id']; ?>.html"><?php echo $v['title']; ?></a>
         <?php endforeach; ?>
         <?php endif; ?>
 

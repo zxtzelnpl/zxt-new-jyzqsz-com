@@ -15,7 +15,8 @@
 
     <link rel="stylesheet" href="/assets/home_new/public/swiper.min.css">
     <link rel="stylesheet" href="/assets/home_new/public/jquery.pagination.css">
-    <link rel="stylesheet" href="/assets/home_new/css/top-news.css">
+    
+    <link rel="stylesheet" href="/assets/home_new/css/info-list.1.css">
     <meta name="baidu-site-verification" content="PGYzWJBy7D" />
 </head>
 <body>
@@ -31,7 +32,7 @@
     <a href="/information/cljy.html" class="crumbs-add">策略纪要</a>
 </div>
 
-<div class="top-news container">
+<!-- <div class="top-news container">
     <h2 class="top-news-head">策略纪要</h2>
     <div class="top-news-content">
     <?php if(count($cljy_list)): ?>
@@ -53,7 +54,65 @@
     <div class="pagination">
         <div id="pagination" class="pagination-inner"></div>
     </div>
+</div> -->
+
+
+<div class="container">
+    <div class="info-list">
+        <h2 class="info-list-head">策略纪要</h2>
+        <div class="info-list-content">
+        <?php if(count($cljy_list)): ?>
+        <?php foreach($cljy_list as $key => $v): ?>
+            <a href="/information/cljy_detail/<?php echo $v['id']; ?>.html" class="info-list-content-li">
+                <img class="info-list-content-li-img" src="/assets/home_new/images/videos/<?php echo rand(1,70); ?>.jpg"/>
+                <div class="info-list-content-li-info">
+                    <div class="info-head">
+                        <div class="info-title">
+                            <?php echo $v['title']; ?>
+                        </div>
+                        <div class="info-sub"><?php echo date("Y-m-d", $v['timestamp']); ?></div>
+                    </div>
+                </div>
+            </a>
+        <?php endforeach; ?>
+        <?php endif; ?>
+            <!-- <div class="info-list-content-li">
+                <img class="info-list-content-li-img" src="/assets/home_new/images/videos/2.jpg"/>
+                <div class="info-list-content-li-info">
+                    <div class="info-head">
+                        <div class="info-title">
+                            民众投顾的发展历史
+                        </div>
+                        <div class="info-sub">2018-04-16</div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+        <div class="pagination">
+            <div id="pagination" class="pagination-inner">
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="info-hot-list">
+        <h2 class="info-list-head">热门纪要</h2>
+        <div class="info-hot-list-content">
+        <?php foreach($hot_info as $v): ?>
+            <a href="/information/cljy_detail/<?php echo $v['id']; ?>.html" class="info-hot-list-content-box">
+                <img class="info-hot-list-content-box-img" src="/assets/home_new/images/videos/<?php echo rand(1,70); ?>.jpg"/>
+                <div class="info-hot-list-content-box-title">
+                    <div class="word"><?php echo $v['title']; ?></div>
+                    <div class="sub"><?php echo date("Y-m-d", $v['timestamp']); ?></div>
+                </div>
+            </a>
+        <?php endforeach; ?>
+        </div>
+    </div>
 </div>
+
+
 
 
 
@@ -81,5 +140,6 @@
         window.location.href = "/information/cljy/"+current+".html";
       }
     });
+
 </script>
 </html>

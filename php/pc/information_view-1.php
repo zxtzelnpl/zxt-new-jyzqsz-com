@@ -112,6 +112,43 @@
     </div>
 
     <div class="page-information-boxes">
+        <div class="page-information-box info-list">
+            <h2 class="title">策略纪要</h2>
+            <span class="more"><a href="/information/cljy.html">更多></a></span>
+            <div class="info-list-content">
+            <?php if(count($cljy_list)): ?>
+            <?php foreach($cljy_list as $key => $v): ?>
+                <a href="/information/cljy_detail/<?php echo $v['id']; ?>.html" class="info-list-content-li">
+                    <img class="info-list-content-li-img" src="/assets/home_new/images/videos/<?php echo rand(1,70); ?>.jpg"/>
+                    <div class="info-list-content-li-info">
+                        <div class="info-head">
+                            <div class="info-title">
+                                <?php echo $v['title']; ?>
+                            </div>
+                            <div class="info-sub"><?php echo date("Y-m-d",$v['timestamp']); ?></div>
+                        </div>
+                    </div>
+                </a>
+            <?php endforeach; ?>
+            <?php endif; ?>
+            </div>
+        </div>
+        <div class="page-information-box info-hot-list">
+            <h2 class="title">热门纪要</h2>
+            <!-- <a href=# class="more">更多></a> -->
+            <div class="info-hot-list-content">
+            <?php foreach($hot_info as $v): ?>
+                <a href="/information/cljy_detail/<?php echo $v['id']; ?>.html" class="info-hot-list-content-box">
+                    <img class="info-hot-list-content-box-img" src="/assets/home_new/images/videos/<?php echo rand(1,70); ?>.jpg"/>
+                    <div class="info-hot-list-content-box-title">
+                        <div class="word"><?php echo $v['title']; ?></div>
+                        <div class="sub"><?php echo date("Y-m-d",$v['timestamp']); ?></div>
+                    </div>
+                </a>
+            <?php endforeach; ?>
+            </div>
+        </div>
+    <!-- <div class="page-information-boxes">
         <div class="page-information-box strategic-summary">
             <h2 class="title">策略纪要</h2>
             <span class="more"><a href="/information/cljy.html">更多></a></span>
@@ -131,7 +168,7 @@
             <?php endforeach; ?>
             <?php endif; ?>
             </div>
-        </div>
+        </div> -->
         <!-- <div class="page-information-box game">
             <h2 class="title">主题博弈</h2>
             <span class="more"><a href="/information/ztby.html">更多></a></span>

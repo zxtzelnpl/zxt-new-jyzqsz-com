@@ -22,6 +22,7 @@
          - .png and .svg icons sprite,
          - preloader.gif (for browsers that do not support CSS animations) -->
     <link rel="stylesheet" href="/assets/home_new/PhotoSwipe/dist/default-skin/default-skin.css">
+    <meta name="baidu-site-verification" content="PGYzWJBy7D" />
 </head>
 <body>
 <!--头部-->

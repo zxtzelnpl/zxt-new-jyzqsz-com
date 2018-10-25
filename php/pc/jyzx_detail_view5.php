@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/assets/home_new/pdf/web/pdf_viewer.css">
     <link rel="stylesheet" href="/assets/home_new/css/game-detail.css">
+    <meta name="baidu-site-verification" content="PGYzWJBy7D" />
 </head>
 <body>
 <!--头部-->

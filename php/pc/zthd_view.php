@@ -7,6 +7,7 @@
 		<title><?php echo $tdk['seo_t']; ?></title>
     	<meta name="keywords" content="<?php echo $tdk['seo_k']; ?>">
     	<meta name="description" content="<?php echo $tdk['seo_d']; ?>">
+    	<meta name="baidu-site-verification" content="PGYzWJBy7D" />
 	</head>
 	<body>
 		<div class="active">

@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/assets/home_new/public/swiper.min.css">
     <link rel="stylesheet" href="/assets/home_new/css/article-detail.css">
+    <meta name="baidu-site-verification" content="PGYzWJBy7D" />
 </head>
 <body>
 <!--头部-->

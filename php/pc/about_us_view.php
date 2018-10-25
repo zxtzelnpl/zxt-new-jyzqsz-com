@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="/assets/home_new/css/QGindex.css"/>
     <link rel="stylesheet" href="/assets/home_new/css/footer.css"/>
     <script src="/assets/home_new/public/jquery.js"></script>
-
-
     <link rel="stylesheet" href="/assets/home_new/public/swiper.min.css">
     <link rel="stylesheet" href="/assets/home_new/css/about-us.css">
+
+    <meta name="baidu-site-verification" content="PGYzWJBy7D" />
 </head>
 <body>
 
@@ -41,8 +41,8 @@
                     <div class="content-img">
                         <img class="content-img-p1" src="/assets/home_new/images/aboutus/common_au_pic_1.png" alt="">
                         <img class="content-img-p2" src="/assets/home_new/images/aboutus/common_au_pic_2.png" alt="">
-                        <img class="content-img-p3" src="/assets/home_new/images/aboutus/common_au_pic_3.png" alt="">
-                        <img class="content-img-p4" src="/assets/home_new/images/aboutus/common_au_pic_4.png" alt="">
+                        <!-- <img class="content-img-p3" src="/assets/home_new/images/aboutus/common_au_pic_3.png" alt=""> -->
+                        <img class="content-img-p3" src="/assets/home_new/images/aboutus/common_au_pic_4.png" alt="">
                     </div>
                 </div>
                 <div class="content-kong"></div>
@@ -165,7 +165,7 @@
                     <div class="content-text">
                         <p style="display:none">ICP备案：粤ICP备15035969号</p>
                         <p>版权所有&copy;民众证券投资咨询有限公司</p>
-                        <p>公司地址：5.山西综改示范区太原学府园区南中环街529号B座14层1406B</p>
+                        <p>公司地址：山西综改示范区太原学府园区南中环街529号B座14层1406B</p>
                     </div>
                 </div>
             </div>

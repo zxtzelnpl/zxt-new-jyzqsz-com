@@ -67,7 +67,7 @@
     <div class="page-information">
         <div class="page-information-boxes">
             <div class="page-information-box dynamics-info">
-                <h2 class="page-information-box-title">资讯动态</h2>
+                <h2 class="page-information-box-title">策略纪要</h2>
                 <span class="more">更多></span>
                 <div class="lis">
                     <a class="li-top">
@@ -77,42 +77,43 @@
                                 <div class="date">25</div>
                             </div>
                             <div class="head-title">
-                                月线四连阴“魔咒”重现？ 未来两周是大盘方向抉择时段
+                                20181016 民众收评
                             </div>
                         </div>
+                        <!-- 下面这段话是固定的 -->
                         <div class="body">
-                            “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
+                            聚焦每日行情变化，分析热点板块轮动，把握市场精细脉络，指导具体操作策略。
                         </div>
                     </a>
                     <a class="li">
                         <span class="li-date">2018/04/25</span>
                         <span class="li-summary">
-                        “五一”小长假后，
-                    </span>
+                            20181016 民众收评
+                        </span>
                     </a>
                     <a class="li">
                         <span class="li-date">2018/04/25</span>
                         <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
+                            20181015 民众收评
+                        </span>
                     </a>
                     <a class="li">
                         <span class="li-date">2018/04/25</span>
                         <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
+                            20181015 民众收评
+                        </span>
                     </a>
                     <a class="li">
                         <span class="li-date">2018/04/25</span>
                         <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
+                            20181014 民众收评
+                        </span>
                     </a>
                     <a class="li">
                         <span class="li-date">2018/04/25</span>
                         <span class="li-summary">
-                        “五一”小长假后，A股市场一度走强，但成交量不足，大盘冲高乏力。上周四为八卦日期，大盘探出低点反弹。周五市场总体观望，等待消息面明朗。5月12日为
-                    </span>
+                            20181013 民众收评
+                        </span>
                     </a>
                 </div>
             </div>
@@ -259,7 +260,7 @@
             <a class="sub-title" href="#">更多 ></a>
             <div class="reference-boxes">
                 <div class="reference-box">
-                    <div class="reference-box-title">民众内参名称</div>
+                    <div class="reference-box-title">【操盘必读】 这边是后面的文字</div>
                     <div class="reference-box-time">
                         2018-01-01
                     </div>
@@ -269,7 +270,7 @@
                     </a>
                 </div>
                 <div class="reference-box">
-                    <div class="reference-box-title">民众内参名称</div>
+                    <div class="reference-box-title">《早评》 2018-09-11</div>
                     <div class="reference-box-time">
                         2018-01-01
                     </div>
@@ -279,7 +280,7 @@
                     </a>
                 </div>
                 <div class="reference-box">
-                    <div class="reference-box-title">民众内参名称民众内参名称民众内参名称</div>
+                    <div class="reference-box-title">《收评》 2018-09-11</div>
                     <div class="reference-box-time">
                         2018-01-01
                     </div>
@@ -793,11 +794,22 @@
 
     /*查过两行加上省略号*/
     eclipse('.finance-box-title',30);
-    eclipse('.reference-box-title',10);
+    // eclipse('.reference-box-title',10);
     eclipse('.product-box-info-detail',50);
 
     /*首页增加的民众信息的部分*/
     eclipse('.li-top .body',64);
     eclipse('.li-info-summary',56);
+
+
+    function formatTitle(dom){
+        var rnothtmlwhite = /[^\x20\t\r\n\f]+/g
+        var title = dom.innerHTML;
+        var formateTitleArray = title.match(rnothtmlwhite)||['民众内参'];
+        dom.innerHTML = formateTitleArray[0]
+    }
+    $('.reference-box-title').each(function(index,dom){
+        formatTitle(dom);
+    })
   })
 </script>

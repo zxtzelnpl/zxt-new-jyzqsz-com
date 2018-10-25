@@ -13,6 +13,7 @@
 	    <link rel="stylesheet" type="text/css" href="/assets/home/css/QGindex.css"/>
 	    <script type="text/javascript" src="/assets/home/js/jquery.js"></script>
 	    <script type="text/javascript" src="/assets/home/js/textauto.js"></script>
+	    <meta name="baidu-site-verification" content="PGYzWJBy7D" />
 		<title>报错</title>
 		<style type="text/css">
 			

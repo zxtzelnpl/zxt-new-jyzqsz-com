@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="/assets/home_new/public/swiper.min.css">
     <link rel="stylesheet" href="/assets/home_new/css/index.css">
     <link rel="stylesheet" href="/assets/home_new/css/move-box.css">
-    <meta name="baidu-site-verification" content="PGYzWJBy7D" />
     <style>.index-number-li .percent{margin-left: 12px;}</style>
 </head>
 <body>
@@ -74,39 +73,6 @@
     <div class="page-information">
         <div class="page-information-boxes">
             <div class="page-information-box dynamics-info">
-                <h2 class="page-information-box-title">民众观点</h2>
-                <span class="more"><a href="/information/cljy.html">更多></a></span>
-                <div class="lis">
-                <?php if(count($tzgd_list)): ?>
-                <?php foreach($tzgd_list as $key => $v): ?>
-                <?php if($key < 1): ?>
-                    <a class="li-top" href="/information/cljy_detail/<?php echo $v['id']; ?>.html" target="_blank">
-                        <div class="head">
-                            <div class="head-date">
-                                <div class="month"><?php echo date("m",$v['timestamp']); ?></div>
-                                <div class="date"><?php echo date("d",$v['timestamp']); ?></div>
-                            </div>
-                            <div class="head-title">
-                                <?php echo $v['title']; ?>
-                            </div>
-                        </div>
-                        <div class="body">
-                            聚焦每日行情变化，分析热点板块轮动，把握市场精细脉络，指导具体操作策略。
-                        </div>
-                    </a>
-                <?php else: ?>
-                    <a class="li" href="/information/cljy_detail/<?php echo $v['id']; ?>.html" target="_blank">
-                        <span class="li-date"><?php echo date("Y/m/d",$v['timestamp']); ?></span>
-                        <span class="li-summary">
-                        <?php echo $v['title']; ?>
-                        </span>
-                    </a>
-                <?php endif; ?>
-                <?php endforeach; ?>
-                <?php endif ?>
-                </div>
-            </div>
-            <!-- <div class="page-information-box dynamics-info">
                 <h2 class="page-information-box-title">投顾观点</h2>
                 <span class="more"><a href="/information/tzgd.html">更多></a></span>
                 <div class="lis">
@@ -138,7 +104,7 @@
                 <?php endforeach; ?>
                 <?php endif ?>
                 </div>
-            </div> -->
+            </div>
             <div class="page-information-box investment-view">
                 <h2 class="page-information-box-title">资讯动态</h2>
                 <span class="more"><a href="/information/zxdt.html">更多></a></span>
@@ -243,45 +209,62 @@
 
     <!--民众风采-->
     <!--民众风采-->
-     <div class="reference">
+    <div class="reference" style="display:none">
         <div class="wrap">
             <h2 class="title">民众内参</h2>
-            <a class="sub-title" href="/information">更多 ></a>
-
-            <div class="reference-boxes"> 
-            <?php foreach($information_list as $key=>$v): ?>
+            <a class="sub-title" href="#">更多 ></a>
+            <div class="reference-boxes">
                 <div class="reference-box">
-                    <div class="reference-box-title" title="<?php echo $v['title']; ?>"><?php echo $v['title']; ?></div>
+                    <div class="reference-box-title">民众内参名称</div>
                     <div class="reference-box-time">
-                        <?php echo date("Y-m-d",$v['timestamp']); ?>
+                        2018-01-01
                     </div>
-                    <img class="reference-box-img" src="/assets/home_new/images/videos/<?php echo rand(1,70); ?>.jpg"/>
-                    <a href="/information/cljy_detail/<?php echo $v['id']; ?>" class="reference-box-link">
+                    <img class="reference-box-img" src="/assets/home_new/images/videos/25.jpg"/>
+                    <a href=# class="reference-box-link">
                         查看内容
                     </a>
                 </div>
-            <?php endforeach; ?>
+                <div class="reference-box">
+                    <div class="reference-box-title">民众内参名称</div>
+                    <div class="reference-box-time">
+                        2018-01-01
+                    </div>
+                    <img class="reference-box-img" src="/assets/home_new/images/videos/62.jpg"/>
+                    <a href=# class="reference-box-link">
+                        查看内容
+                    </a>
+                </div>
+                <div class="reference-box">
+                    <div class="reference-box-title">民众内参名称民众内参名称民众内参名称</div>
+                    <div class="reference-box-time">
+                        2018-01-01
+                    </div>
+                    <img class="reference-box-img" src="/assets/home_new/images/videos/33.jpg"/>
+                    <a href=# class="reference-box-link">
+                        查看内容
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-   <!--  <div class="reference" style="display:none">
-       <div class="wrap">
-           <h2 class="title">民众内参</h2>
-           <a class="sub-title" href="/information/index.html">更多 ></a>
-           <div class="reference-boxes">
-               <?php foreach($information_list as $key => $v): ?>
-                   <a class="reference-box" href="/information/tzgd_detail/<?php echo $v['id']; ?>.html">
-                       <img src="<?php echo $v['pic_path']; ?>" alt="" class="reference-box-img">
-                       <div class="reference-box-info">
-                           <p class="reference-box-title"><?php echo $v['title']; ?></p>
-                           <p class="date"><?php echo substr($v['datetime'],0,10); ?></p>
-                       </div>
-                   </a>
-               <?php endforeach; ?>
-           </div>
-       </div>
-   </div> -->
-     
+    <div class="reference" style="display:none">
+        <div class="wrap">
+            <h2 class="title">民众内参</h2>
+            <a class="sub-title" href="/information/index.html">更多 ></a>
+            <div class="reference-boxes">
+                <?php foreach($information_list as $key => $v): ?>
+                    <a class="reference-box" href="/information/tzgd_detail/<?php echo $v['id']; ?>.html">
+                        <img src="<?php echo $v['pic_path']; ?>" alt="" class="reference-box-img">
+                        <div class="reference-box-info">
+                            <p class="reference-box-title"><?php echo $v['title']; ?></p>
+                            <p class="date"><?php echo substr($v['datetime'],0,10); ?></p>
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+
 
     <!--产品中心-->
     <div class="product">

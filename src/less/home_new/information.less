@@ -130,6 +130,118 @@
   background:url("/assets/home_new/images/icon_zx_tt.png") no-repeat -4px center;
 }
 
+
+@box-name:info-list;
+.@{box-name} {
+  margin-top:60px;
+  width:790px;
+  padding:0 40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 24px rgba(68,162,242,.2);
+  background:#fff;
+}
+.@{box-name}-content{
+  &-li{
+    display:flex;
+    padding:10px 0;
+    border-bottom: 1px solid @lineColor;
+    &-img{
+      display:block;
+      width:160px;
+      height:90px;
+      .img-hover();
+
+      flex-shrink: 0;
+    }
+    &-info{
+      display:flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      flex-grow: 1;
+      padding-left:40px;
+    }
+    .info{
+      &-head{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        height: 90px;
+      }
+      &-title{
+        font-size:24px;
+        color:#333333;
+        line-height: 1;
+        .text-hover();
+      }
+      &-sub{
+        margin-top:12px;
+        font-size:16px;
+        line-height: 1;
+        color:#999999;
+      }
+      &-text{
+        margin-bottom:10px;
+        height:48px;
+        font-size:16px;
+        color:#666666;
+      }
+    }
+  }
+}
+
+@hot-name:info-hot-list;
+.@{hot-name} {
+  margin-top:60px;
+  width:380px;
+  padding:0 25px;
+  box-sizing: border-box;
+  box-shadow: 0 0 24px rgba(68,162,242,.2);
+  background: #fff;
+}
+.@{hot-name}-content{
+  &-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10px 0;
+
+    &-img{
+      .img-hover();
+    }
+
+    &-title{
+      display: flex;
+      justify-content: space-between;
+
+      padding: 5px 0;
+      width: 100%;
+
+      .word{
+        max-width: 180px;
+        .no-wrap();
+        .text-hover();
+      }
+
+      .sub{
+        color:#999999;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.@{hot-name},.@{box-name}{
+  .more{
+    right:40px;
+  }
+}
+
+// 后面删除
 .strategic-summary,.game{
   box-sizing: border-box;
   padding:0 20px;
@@ -186,7 +298,6 @@
     }
   }
 }
-
 .game{
   margin-top:60px;
   width:380px;

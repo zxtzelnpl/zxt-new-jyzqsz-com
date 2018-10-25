@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/assets/home_new/public/swiper.min.css">
     <link rel="stylesheet" href="/assets/home_new/public/jquery.pagination.css">
     <link rel="stylesheet" href="/assets/home_new/css/dynamics-info.css">
+    <meta name="baidu-site-verification" content="PGYzWJBy7D" />
 </head>
 <body>
 <!--头部-->
